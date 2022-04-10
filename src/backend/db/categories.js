@@ -30,5 +30,5 @@ export const categories = [
     _id: uuid(),
     categoryName: "Season 9",
     description: "Coke Studio | Season 9",
-  }
+  },
 ];
