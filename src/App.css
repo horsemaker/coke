@@ -14,6 +14,7 @@
   --color-cta: #e60003;
 
   --color-background: #181818;
+  --color-background-accent-one: #464646;
   --color-foreground: #ffffff;
 }
 
@@ -21,5 +22,17 @@
   --color-cta: #e60003;
 
   --color-background: #ffffff;
+  --color-background-accent-one: #cccccc;
   --color-foreground: #181818;
+}
+
+.app {
+  font-family: "Rubik", sans-serif;
+  background-color: var(--color-background);
+  color: var(--color-foreground);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
