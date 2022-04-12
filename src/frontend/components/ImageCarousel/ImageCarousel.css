@@ -1,0 +1,10 @@
+.slider-wrapper {
+  background-color: transparent;
+  border-width: 0;
+  padding: 0;
+  border-radius: 0;
+}
+
+.carousel .thumbs-wrapper {
+  text-align: center;
+}
