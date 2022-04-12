@@ -1,0 +1,49 @@
+.banner {
+  margin-left: 1rem;
+  margin-right: 1rem;
+  padding: 1rem 0;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+  gap: 2rem 0;
+}
+
+.banner-img {
+  width: 100%;
+  max-width: 40rem;
+}
+
+.banner-details {
+  max-width: 25rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.banner-title {
+  max-width: 25rem;
+}
+
+.banner-desc {
+  line-height: 1.5rem;
+}
+
+.banner-actions {
+  margin-top: 2.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+@media screen and (max-width: 1500px) {
+  .banner-img {
+    max-width: 35rem;
+  }
+}
+
+@media screen and (max-width: 1050px) {
+  .banner-actions {
+    margin-top: 0;
+  }
+}
