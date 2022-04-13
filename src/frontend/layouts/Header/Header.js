@@ -1,14 +1,16 @@
 import React from "react";
-import { NavLink, useLocation } from "react-router-dom";
-import { useTheme } from "../../contexts";
+import { NavLink, useLocation, useNavigate } from "react-router-dom";
+import { useAuth, useTheme } from "../../contexts";
 import { Search, ThemeToggle } from "../../components";
 import { LOGO_DARK, LOGO_LIGHT } from "../../constants";
 import "./Header.css";
 
 export const Header = () => {
   const { theme } = useTheme();
+  const { auth } = useAuth();
 
   const { pathname } = useLocation();
+  const navigate = useNavigate();
 
   return (
     <header className="header">
@@ -36,10 +38,19 @@ export const Header = () => {
         <section className="nav-theme-toggle">
           <ThemeToggle />
         </section>
-        <section className="nav-authorization">
-          <button className="btn">Sign In</button>
-          <button className="btn btn-primary">Sign Up</button>
-        </section>
+        {!auth.status && (
+          <section className="nav-authorization">
+            <button className="btn" onClick={() => navigate("/signin")}>
+              Sign In
+            </button>
+            <button
+              className="btn btn-primary"
+              onClick={() => navigate("/signup")}
+            >
+              Sign Up
+            </button>
+          </section>
+        )}
       </nav>
     </header>
   );
