@@ -11,7 +11,7 @@ export const HomePage = () => {
       </section>
       <section className="home-page-banners">
         {homeBanners.map((banner, bannerIndex) => (
-          <Banner banner={{ ...banner, bannerIndex }} />
+          <Banner key={banner._id} banner={{ ...banner, bannerIndex }} />
         ))}
       </section>
     </div>
