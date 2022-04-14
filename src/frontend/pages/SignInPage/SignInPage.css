@@ -1,9 +1,7 @@
 .auth-screen {
-  margin-left: 1rem;
-  margin-right: 1rem;
+  margin: 2rem 1rem 1rem 0;
   display: flex;
   justify-content: center;
-  margin-top: 2rem;
 }
 
 .form {
