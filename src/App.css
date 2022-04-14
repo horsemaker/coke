@@ -14,16 +14,29 @@
   --color-cta: #e60003;
 
   --color-background: #181818;
-  --color-background-accent-one: #464646;
+  --color-background-accent-one: #2f2f2f;
+  --color-background-accent-two: #464646;
+  --color-background-accent-three: #5d5d5d;
   --color-foreground: #ffffff;
+
+  --color-red-accent: #380d0d;
+  --color-red: #fecaca;
+
+  --box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
 }
 
 .light-theme {
   --color-cta: #e60003;
 
   --color-background: #ffffff;
-  --color-background-accent-one: #cccccc;
+  --color-background-accent-one: #e6e6e6;
+  --color-background-accent-two: #cccccc;
   --color-foreground: #181818;
+
+  --color-red-accent: #fecaca;
+  --color-red: #380d0d;
+
+  --box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
 }
 
 .app {
@@ -43,7 +56,7 @@
 
 /* Buttons */
 .btn {
-  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+  box-shadow: var(--box-shadow);
 }
 
 .btn-primary {
@@ -51,3 +64,24 @@
   color: var(--color-background);
 }
 /* Buttons */
+
+/* Inputs */
+.coke-input {
+  accent-color: var(--color-cta);
+}
+
+input[type="email"]:valid {
+  background-color: transparent;
+  color: inherit;
+}
+/* Inputs */
+
+/* Error */
+.error-message {
+  background-color: var(--color-red-accent);
+  color: var(--color-red);
+  padding: 0.25rem 0.5rem;
+  border-radius: 5px;
+  width: max-content;
+}
+/* Error */

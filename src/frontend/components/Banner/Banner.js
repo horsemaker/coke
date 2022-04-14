@@ -1,9 +1,12 @@
 import React from "react";
 import { Link, useNavigate } from "react-router-dom";
+import { useAuth } from "../../contexts";
 import "./Banner.css";
 
 export const Banner = ({ banner }) => {
   const { bannerIndex, title, description, imageUrl } = banner;
+  const { auth } = useAuth();
+
   const navigate = useNavigate();
 
   return (
@@ -12,15 +15,21 @@ export const Banner = ({ banner }) => {
         <h1 className="banner-title">{title}</h1>
         <p className="banner-desc">{description}</p>
         <div className="banner-actions">
-          <button
-            className="btn btn-primary"
-            onClick={() => navigate("/signup")}
-          >
-            Join Now
-          </button>
-          <Link to="/signin" className="link">
-            Already have an account?
-          </Link>
+          {auth.status ? (
+            <button className="btn btn-primary">Explore Now!</button>
+          ) : (
+            <>
+              <button
+                className="btn btn-primary"
+                onClick={() => navigate("/signup")}
+              >
+                Join Now
+              </button>
+              <Link to="/signin" className="link">
+                Already have an account?
+              </Link>
+            </>
+          )}
         </div>
       </section>
       <section
