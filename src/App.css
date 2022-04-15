@@ -14,6 +14,7 @@
   --color-cta: #e60003;
 
   --color-background: #181818;
+  --color-background-transparent: #18181880;
   --color-background-accent-one: #2f2f2f;
   --color-background-accent-two: #464646;
   --color-background-accent-three: #5d5d5d;
@@ -29,6 +30,7 @@
   --color-cta: #e60003;
 
   --color-background: #ffffff;
+  --color-background-transparent: #ffffff80;
   --color-background-accent-one: #e6e6e6;
   --color-background-accent-two: #cccccc;
   --color-foreground: #181818;
@@ -46,6 +48,13 @@
   min-height: 100vh;
   display: flex;
   flex-direction: column;
+}
+
+.app-content {
+  margin-top: 5rem;
+  margin-bottom: 2.5rem;
+  position: relative;
+  display: flex;
 }
 
 /* Link */
