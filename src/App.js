@@ -1,11 +1,14 @@
 import "./App.css";
-import { Footer, Header, Main } from "./frontend/layouts";
+import { Footer, Header, Main, Sidebar } from "./frontend/layouts";
 
 function App() {
   return (
     <div className="app">
       <Header />
-      <Main />
+      <div className="app-content">
+        <Sidebar />
+        <Main />
+      </div>
       <Footer />
     </div>
   );
