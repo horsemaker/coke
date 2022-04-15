@@ -16,7 +16,12 @@ export const Banner = ({ banner }) => {
         <p className="banner-desc">{description}</p>
         <div className="banner-actions">
           {auth.status ? (
-            <button className="btn btn-primary">Explore Now!</button>
+            <button
+              className="btn btn-primary"
+              onClick={() => navigate("/explore")}
+            >
+              Explore Now!
+            </button>
           ) : (
             <>
               <button
