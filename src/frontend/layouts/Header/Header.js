@@ -1,23 +1,29 @@
 import React from "react";
 import { NavLink, useLocation, useNavigate } from "react-router-dom";
-import { useAuth, useTheme } from "../../contexts";
-import { Search, ThemeToggle } from "../../components";
+import { useAuth, useSidebar, useTheme } from "../../contexts";
+import { AccountDropdown, Search, ThemeToggle } from "../../components";
 import { LOGO_DARK, LOGO_LIGHT } from "../../constants";
 import "./Header.css";
 
 export const Header = () => {
   const { theme } = useTheme();
   const { auth } = useAuth();
+  const { setShowSidebar } = useSidebar();
 
   const { pathname } = useLocation();
   const navigate = useNavigate();
 
+  const navMenuForbiddenPaths = ["/", "/signin", "/signup"];
+
   return (
     <header className="header">
       <nav className="nav">
-        {pathname !== "/" && (
+        {!navMenuForbiddenPaths.includes(pathname) && (
           <section>
-            <button className="nav-menu">
+            <button
+              className="nav-menu"
+              onClick={() => setShowSidebar((showSidebar) => !showSidebar)}
+            >
               <span className="material-icons nav-menu-icon">menu</span>
             </button>
           </section>
@@ -51,6 +57,7 @@ export const Header = () => {
             </button>
           </section>
         )}
+        {auth.status && <AccountDropdown />}
       </nav>
     </header>
   );

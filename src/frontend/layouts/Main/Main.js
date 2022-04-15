@@ -10,6 +10,7 @@ export const Main = () => {
         <Route path="/" element={<HomePage />} />
         <Route path="/signin" element={<SignInPage />} />
         <Route path="/signup" element={<SignUpPage />} />
+        <Route path="/explore" element={<></>} />
       </Routes>
     </div>
   );
