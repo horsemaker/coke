@@ -1,13 +1,23 @@
 import React from "react";
 import { BrowserRouter } from "react-router-dom";
-import { AuthProvider, SidebarProvider, ThemeProvider } from "../contexts";
+import {
+  AuthProvider,
+  CategoriesProvider,
+  SidebarProvider,
+  ThemeProvider,
+  VideosProvider,
+} from "../contexts";
 
 export const CombinedProvider = ({ children }) => {
   return (
     <BrowserRouter>
       <ThemeProvider>
         <AuthProvider>
-          <SidebarProvider>{children}</SidebarProvider>
+          <SidebarProvider>
+            <VideosProvider>
+              <CategoriesProvider>{children}</CategoriesProvider>
+            </VideosProvider>
+          </SidebarProvider>
         </AuthProvider>
       </ThemeProvider>
     </BrowserRouter>
