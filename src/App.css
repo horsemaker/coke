@@ -19,6 +19,9 @@
   --color-background-accent-two: #464646;
   --color-background-accent-three: #5d5d5d;
   --color-foreground: #ffffff;
+  --color-foreground-accent-one: #e6e6e6;
+  --color-foreground-accent-two: #cccccc;
+  --color-foreground-accent-three: #b3b3b3;
 
   --color-red-accent: #380d0d;
   --color-red: #fecaca;
@@ -33,7 +36,11 @@
   --color-background-transparent: #ffffff80;
   --color-background-accent-one: #e6e6e6;
   --color-background-accent-two: #cccccc;
+  --color-background-accent-three: #b3b3b3;
   --color-foreground: #181818;
+  --color-foreground-accent-one: #2f2f2f;
+  --color-foreground-accent-two: #464646;
+  --color-foreground-accent-three: #5d5d5d;
 
   --color-red-accent: #fecaca;
   --color-red: #380d0d;
