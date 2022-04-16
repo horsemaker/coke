@@ -6,6 +6,7 @@ import { v4 as uuid } from "uuid";
  * */
 
 export const categories = [
+  { _id: uuid(), categoryName: "All", description: "Coke Studio | All Songs" },
   {
     _id: uuid(),
     categoryName: "Season 14",
