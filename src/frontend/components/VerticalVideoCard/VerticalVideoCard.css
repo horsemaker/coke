@@ -1,0 +1,81 @@
+.vertical-video-card {
+  flex-basis: calc(25% - 0.75rem);
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.vertical-video-card-img {
+  width: 100%;
+  border-radius: 5px;
+}
+
+.vertical-video-card-primary {
+  display: flex;
+  gap: 0.25rem;
+}
+
+.vertical-video-card-title {
+  font-weight: 500;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+
+.vertical-video-card-more {
+  visibility: hidden;
+  padding: 0.25rem 0.5rem;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  aspect-ratio: 1 / 1;
+}
+
+.vertical-video-card:hover .vertical-video-card-more {
+  visibility: visible;
+}
+
+.vertical-video-card-more:hover {
+  background-color: var(--color-background-accent-one);
+}
+
+.vertical-video-card-secondary {
+  font-size: 0.875rem;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.vertical-video-card-secondary-separator {
+  font-size: 8px;
+}
+
+@media screen and (max-width: 1250px) {
+  .vertical-video-card {
+    flex-basis: calc((100% / 3) - (2rem / 3));
+  }
+}
+
+@media screen and (max-width: 950px) {
+  .vertical-video-card {
+    flex-basis: calc(50% - 1rem);
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .vertical-video-card-more{
+    visibility: visible;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .vertical-video-card {
+    flex-basis: 100%;
+  }
+}
