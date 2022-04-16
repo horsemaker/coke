@@ -1,9 +1,14 @@
 import React from "react";
-import { useCategories } from "../../contexts";
+import { CATEGORY } from "../../constants";
+import { useCategories, useFilters } from "../../contexts";
 import "./Categories.css";
 
 export const Categories = () => {
   const { categories } = useCategories();
+  const {
+    filters: { category },
+    dispatchFilters,
+  } = useFilters();
 
   return (
     <div className="categories">
@@ -14,6 +19,10 @@ export const Categories = () => {
             type="radio"
             name="categories"
             id={categoryName}
+            checked={category && category === categoryName}
+            onChange={() =>
+              dispatchFilters({ type: CATEGORY, payload: categoryName })
+            }
           />
           <label className="category-label" htmlFor={categoryName}>
             {categoryName}
