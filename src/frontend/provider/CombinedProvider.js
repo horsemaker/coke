@@ -3,6 +3,7 @@ import { BrowserRouter } from "react-router-dom";
 import {
   AuthProvider,
   CategoriesProvider,
+  FiltersProvider,
   SidebarProvider,
   ThemeProvider,
   VideosProvider,
@@ -15,7 +16,9 @@ export const CombinedProvider = ({ children }) => {
         <AuthProvider>
           <SidebarProvider>
             <VideosProvider>
-              <CategoriesProvider>{children}</CategoriesProvider>
+              <CategoriesProvider>
+                <FiltersProvider>{children}</FiltersProvider>
+              </CategoriesProvider>
             </VideosProvider>
           </SidebarProvider>
         </AuthProvider>
