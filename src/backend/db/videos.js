@@ -9,6 +9,8 @@ export const videos = [
     title:
       "Coke Studio | Season 14 | Phir Milenge | Faisal Kapadia x Young Stunners",
     creator: "Coke Studio",
+    views: 6556853,
+    uploadedAt: "Mar 22, 2022",
     categoryName: "Season 14",
     description: `
     Coke Studio 14
@@ -25,6 +27,8 @@ export const videos = [
     _id: "GR5U85eo4yQ",
     title: "Coke Studio | Season 14 | Go | Abdullah Siddiqui x Atif Aslam",
     creator: "Coke Studio",
+    views: 8535948,
+    uploadedAt: "Mar 18, 2022",
     categoryName: "Season 14",
     description: `
     Coke Studio 14
@@ -43,6 +47,8 @@ export const videos = [
     title:
       "Coke Studio | Season 14 | Thagyan | Zain Zohaib x Quratulain Balouch",
     creator: "Coke Studio",
+    views: 7949227,
+    uploadedAt: "Mar 13, 2022",
     categoryName: "Season 14",
     description: `
     Coke Studio 14
@@ -60,6 +66,8 @@ export const videos = [
     _id: "JTJ6q-cGs-o",
     title: "Coke Studio | Season 14 | Beparwah | Momina Mustehsan",
     creator: "Coke Studio",
+    views: 9722232,
+    uploadedAt: "Mar 7, 2022",
     categoryName: "Season 14",
     description: `
     Coke Studio 14
@@ -78,6 +86,8 @@ export const videos = [
     title:
       "Coke Studio | Season 14 | Muaziz Saarif | Faris Shafi x Meesha Shafi",
     creator: "Coke Studio",
+    views: 6340501,
+    uploadedAt: "Feb 27, 2022",
     categoryName: "Season 14",
     description: `
     Coke Studio 14
@@ -96,6 +106,8 @@ export const videos = [
     title:
       "Coke Studio | Season 14 | Peechay Hutt | Justin Bibis x Talal Qureshi x Hasan Raheem",
     creator: "Coke Studio",
+    views: 10697620,
+    uploadedAt: "Feb 19, 2022",
     categoryName: "Season 14",
     description: `
     Coke Studio 14
@@ -116,6 +128,8 @@ export const videos = [
     title:
       "Coke Studio | Season 14 | Ye Dunya | Karakoram x Talha Anjum x Faris Shafi",
     creator: "Coke Studio",
+    views: 6633705,
+    uploadedAt: "Feb 12, 2022",
     categoryName: "Season 14",
     description: `
     Coke Studio 14
@@ -132,6 +146,8 @@ export const videos = [
     _id: "5Eqb_-j3FDA",
     title: "Coke Studio | Season 14 | Pasoori | Ali Sethi x Shae Gill",
     creator: "Coke Studio",
+    views: 70443390,
+    uploadedAt: "Feb 7, 2022",
     categoryName: "Season 14",
     description: `
     Coke Studio 14
@@ -152,6 +168,8 @@ export const videos = [
     title:
       "Coke Studio | Season 14 | Neray Neray Vas | Soch The Band x Butt Brothers",
     creator: "Coke Studio",
+    views: 9605031,
+    uploadedAt: "Feb 1, 2022",
     categoryName: "Season 14",
     description: `
     Coke Studio 14
@@ -168,22 +186,8 @@ export const videos = [
     _id: "BUm_hFMlsgg",
     title: "Coke Studio | Season 14 | Mehram | Asfar Hussain x Arooj Aftab",
     creator: "Coke Studio",
-    categoryName: "Season 14",
-    description: `
-    Coke Studio 14
-    Curated & Produced by Xulfi
-
-    Song Narrative: Asfar Hussain and Xulfi 
-    Composed by Asfar Hussain & Xulfi
-    Written by Asfar Hussain, Additional Lyrics by Xulfi 
-    Music Arranged & Produced by Abdullah Siddiqui, Xulfi & Arooj Aftab
-    Mixed by Xulfi
-    `,
-  },
-  {
-    _id: "BUm_hFMlsgg",
-    title: "Coke Studio | Season 14 | Mehram | Asfar Hussain x Arooj Aftab",
-    creator: "Coke Studio",
+    views: 9504975,
+    uploadedAt: "Jan 28, 2022",
     categoryName: "Season 14",
     description: `
     Coke Studio 14
@@ -201,6 +205,8 @@ export const videos = [
     title:
       "Coke Studio | Season 14 | Sajan Das Na | Atif Aslam x Momina Mustehsan",
     creator: "Coke Studio",
+    views: 11370537,
+    uploadedAt: "Jan 23, 2022",
     categoryName: "Season 14",
     description: `
     Coke Studio 14
@@ -219,6 +225,8 @@ export const videos = [
     title:
       "Coke Studio | Season 14 | Kana Yaari | Kaifi Khalil x Eva B x Abdul Wahab Bugti",
     creator: "Coke Studio",
+    views: 16103943,
+    uploadedAt: "Jan 19, 2022",
     categoryName: "Season 14",
     description: `
     Coke Studio 14
@@ -235,6 +243,8 @@ export const videos = [
     _id: "7D4vNcK6D38",
     title: "Coke Studio | Season 14 | Tu Jhoom | Naseebo Lal x Abida Parveen",
     creator: "Coke Studio",
+    views: 31881382,
+    uploadedAt: "Jan 14, 2022",
     categoryName: "Season 14",
     description: `
     Coke Studio 14
@@ -253,6 +263,8 @@ export const videos = [
     _id: "OCCXUwKMH4s",
     title: "Coke Studio Season 12 | Daachi Waaliya | Hadiqa Kiani",
     creator: "Coke Studio",
+    views: 3405993,
+    uploadedAt: "Dec 23, 2019",
     categoryName: "Season 12",
     description: `
     #CokeStudio12 presents Daachi Waaliya, a song that carries with it flavors of rural Punjab and the rhythm of a camel's gait. Blending the song with Sufi verses written by Bulleh Shah and Waris Shah, Hadiqa Kiani turns this classic, folk tune into a contemplative piece on the nature of love
@@ -265,6 +277,8 @@ export const videos = [
     _id: "NDkCEFmYfE4",
     title: "Coke Studio Season 12 | Aaye Kuch Abr | Atif Aslam",
     creator: "Coke Studio",
+    views: 7056924,
+    uploadedAt: "Nov 29, 2019",
     categoryName: "Season 12",
     description: `
     #CokeStudio12 presents an incarnation of Faiz Ahmed Faiz’s poetry in the voice of Atif Aslam with Aaye Kuch Abr. Speaking of solitude and finding personal solace in life’s little pleasures, the ghazal provides a space for one to find the common humanity in one's own experiences.  
@@ -281,6 +295,8 @@ export const videos = [
     _id: "Ky34KrtRgNc",
     title: "Coke Studio Season 12 | Heeray | Rahat Fateh Ali Khan & Aima Baig",
     creator: "Coke Studio",
+    views: 3148405,
+    uploadedAt: "Nov 25, 2019",
     categoryName: "Season 12",
     description: `
     #CokeStudio12 presents a modern retelling of the tale of Heer-Ranjha, brought to life in the voice of Ustad Rahat Fateh Ali Khan and Aima Baig. In a musical style that is new to his repertoire, Khan Sahab modernises this centuries-old saga, bringing it to the Heers and Ranjhas of today. 
@@ -293,6 +309,8 @@ export const videos = [
     _id: "QqI5pMJuFbE",
     title: "Coke Studio Season 12 | Hairaan Hua | Sanam Marvi",
     creator: "Coke Studio",
+    views: 7465432,
+    uploadedAt: "Nov 15, 2019",
     categoryName: "Season 12",
     description: `
     With poetry composed by Sachal Sarmast, Sanam Marvi graces #CokeStudio12 in Hairaan Hua, a celebration of the Ultimate Beauty of the Divine, and the love and wonder it inspires in His devotees. 
@@ -308,6 +326,8 @@ export const videos = [
     _id: "gKLM8GpxQ4k",
     title: "Coke Studio Season 12 | Dhola | Sahir Ali Bagga & Aima Baig",
     creator: "Coke Studio",
+    views: 16722474,
+    uploadedAt: "Nov 15, 2019",
     categoryName: "Season 12",
     description: `
     Returning to #CokeStudio12 in Dhola, Sahir Ali Bagga and Aima Baig celebrate the joy and vulnerability of being in love in a conversation between two companions who have vowed to be give each other their hearts. 
@@ -320,6 +340,8 @@ export const videos = [
     _id: "hR8FEdC6aAs",
     title: "Coke Studio Season 12 | Gulon Main Rang | Ali Sethi",
     creator: "Coke Studio",
+    views: 6026493,
+    uploadedAt: "Nov 15, 2019",
     categoryName: "Season 12",
     description: `
     Ali Sethi takes the stage on #CokeStudio12 in Gulon Main Rang, a ghazal by Faiz Ahmed Faiz that weaves multiple layers of meanings within images of blossoming springtime and romantic yearning. 
@@ -337,6 +359,8 @@ export const videos = [
     title:
       "Coke Studio Season 12 | Mubarik Mubarik | Atif Aslam & Banur's Band",
     creator: "Coke Studio",
+    views: 7873371,
+    uploadedAt: "Nov 8, 2019",
     categoryName: "Season 12",
     description: `
     Journeying to #CokeStudio12 from Balochistan, Banur's Band collaborates with Atif Aslam in Mubarik Mubarik, a festive number showcasing melodies and rhythms that have traveled down to the Baloch people through history and tradition.
@@ -349,6 +373,8 @@ export const videos = [
     _id: "F0Mfz3B16KE",
     title: "Coke Studio Season 12 | Saiyaan | Shuja Haider & Rachel Viccaji",
     creator: "Coke Studio",
+    views: 8697703,
+    uploadedAt: "Oct 28, 2019",
     categoryName: "Season 12",
     description: `
     #CokeStudio12 presents Saiyaan, a duet by Shuja Haider & Rachel Viccaji that hints at the ever present feeling of selfless love, a kind so rare and oft found in folktales that have traveled down to us through time.
@@ -364,6 +390,8 @@ export const videos = [
     _id: "e6o8GhoofzE",
     title: "Coke Studio Season 12 | Dam Mastam | Rahat Fateh Ali Khan",
     creator: "Coke Studio",
+    views: 7547917,
+    uploadedAt: "Oct 18, 2019",
     categoryName: "Season 12",
     description: `
     #CokeStudio12 presents Dam Mastam; composed in raag Bhimpalasi, the song uses the metaphor of being mast, a state of forgetting one's self in love of the Divine.
@@ -375,6 +403,8 @@ export const videos = [
     _id: "74cVT_tUpck",
     title: "Coke Studio Season 12 | Wohi Khuda Hai | Atif Aslam",
     creator: "Coke Studio",
+    views: 52270951,
+    uploadedAt: "Oct 11, 2019",
     categoryName: "Season 12",
     description: `
     Song Name: Wohi Khuda Hai
@@ -384,97 +414,100 @@ export const videos = [
     Produced By: Rohail Hyatt
     `,
   },
-  {
-    _id: "klEYnZjf66s",
-    title:
-      "Coke Studio Season 11| Luddi Hai Jamalo| Ali Sethi & Humaira Arshad",
-    creator: "Coke Studio",
-    categoryName: "Season 11",
-    description: `
-    Coke Studio Season 11| Episode 8
-    #LuddiHaiJamalo is a unique blend combining the richness of Punjabi folk and top mehndi songs with a twist of disco, performed by Ali Sethi and Humaira Arshad! Ali Sethi has sung a few Coke Studio songs like Ranjish hi Sahi, Tinak Dhin, Aaqa and now Luddi Hai Jamalo. Accompanied by the beautiful voice of Humaira Arshad, Ali Sethi sings this wedding song that will make it to the top shadi songs and top desi songs of 2018! #CokeStudio11
-    `,
-  },
-  {
-    _id: "klEYnZjf66s",
-    title:
-      "Coke Studio Season 11| Luddi Hai Jamalo| Ali Sethi & Humaira Arshad",
-    creator: "Coke Studio",
-    categoryName: "Season 11",
-    description: `
-    Coke Studio Season 11| Episode 8
-    #LuddiHaiJamalo is a unique blend combining the richness of Punjabi folk and top mehndi songs with a twist of disco, performed by Ali Sethi and Humaira Arshad! Ali Sethi has sung a few Coke Studio songs like Ranjish hi Sahi, Tinak Dhin, Aaqa and now Luddi Hai Jamalo. Accompanied by the beautiful voice of Humaira Arshad, Ali Sethi sings this wedding song that will make it to the top shadi songs and top desi songs of 2018! #CokeStudio11
-    `,
-  },
-  {
-    _id: "gK-eU6QFEnM",
-    title: "Coke Studio Season 11| Ballay Ballay| Abrar Ul Haq and Aima Baig",
-    creator: "Coke Studio",
-    categoryName: "Season 11",
-    description: `
-    Coke Studio Season 11| Episode 7
-    #BallayBallay is a Punjabi mash-up of the desi wedding songs by Abrar Ul Haq and Aima Baig. The track has been masterfully created by the house band featuring a strong groove improvised around mehndi songs for dancing and Pakistani shaadi songs.
-    Just like his many hits, this will make it to the list of Abrar Ul Haq’s top songs and top mehndi songs for dancing performed on the Coke Studio Season 11 stage. #CokeStudio11
-    `,
-  },
+  // {
+  //   _id: "klEYnZjf66s",
+  //   title:
+  //     "Coke Studio Season 11| Luddi Hai Jamalo| Ali Sethi & Humaira Arshad",
+  //   creator: "Coke Studio",
+  //   views: 9975242,
+  //   uploadedAt: "Oct 12, 2018",
+  //   categoryName: "Season 11",
+  //   description: `
+  //   Coke Studio Season 11| Episode 8
+  //   #LuddiHaiJamalo is a unique blend combining the richness of Punjabi folk and top mehndi songs with a twist of disco, performed by Ali Sethi and Humaira Arshad! Ali Sethi has sung a few Coke Studio songs like Ranjish hi Sahi, Tinak Dhin, Aaqa and now Luddi Hai Jamalo. Accompanied by the beautiful voice of Humaira Arshad, Ali Sethi sings this wedding song that will make it to the top shadi songs and top desi songs of 2018! #CokeStudio11
+  //   `,
+  // },
+  // {
+  //   _id: "gK-eU6QFEnM",
+  //   title: "Coke Studio Season 11| Ballay Ballay| Abrar Ul Haq and Aima Baig",
+  //   creator: "Coke Studio",
+  //   views: 14982215,
+  //   uploadedAt: "Oct 5, 2018",
+  //   categoryName: "Season 11",
+  //   description: `
+  //   Coke Studio Season 11| Episode 7
+  //   #BallayBallay is a Punjabi mash-up of the desi wedding songs by Abrar Ul Haq and Aima Baig. The track has been masterfully created by the house band featuring a strong groove improvised around mehndi songs for dancing and Pakistani shaadi songs.
+  //   Just like his many hits, this will make it to the list of Abrar Ul Haq’s top songs and top mehndi songs for dancing performed on the Coke Studio Season 11 stage. #CokeStudio11
+  //   `,
+  // },
   {
     _id: "w3s8cjG2WYY",
-    title: "Coke Studio Season 11| Hawa Hawa| Gul Panrra & Hassan Jahangir",
+    title: "Coke Studio Season 11 | Hawa Hawa | Gul Panrra & Hassan Jahangir",
     creator: "Coke Studio",
+    views: 28024525,
+    uploadedAt: "Sep 28, 2018",
     categoryName: "Season 11",
     description: `
-    Coke Studio Season 11| Episode 6
+    Coke Studio Season 11 | Episode 6
     Song Name: Hawa Hawa
     A star from 80’s Pakistani music and an age-old folk tune turned Pakistani pop chart-topper, #HawaHawa gets revived with Hassan Jahangir’s classic rock star vibes and Gul Panrra's sweet voice! With percussion-driven Balochi Lewa beats this nostalgic remix will become a favorite in the desi dance songs of 2018 and definitely be one of the top trending songs of Coke studio 11. #CokeStudio11
     `,
   },
-  {
-    _id: "WzlO79d3S8c",
-    title:
-      "Coke Studio Season 11| Piya Ghar Aaya| Fareed Ayaz| Abu Muhammad Qawwal and Brothers",
-    creator: "Coke Studio",
-    categoryName: "Season 11",
-    description: `
-    Coke Studio Season 11| Episode 3
-    Experience the emotions of the wildly popular classic, #PiyaGharAaya, as Fareed Ayaz explains the divine notion of this Sufi kalaam accompanied with the powerful vocals of Abu Muhammad Qawwal and Brothers. #CokeStudio11
-    `,
-  },
-  {
-    _id: "S33PzzeozpU",
-    title:
-      "Coke Studio Season 11| Roye Roye| Sahir Ali Bagga and Momina Mustehsan",
-    creator: "Coke Studio",
-    categoryName: "Season 11",
-    description: `
-    Coke Studio Season 11| Episode 3
-    Song Name: Roye Roye
-    #RoyeRoye is a ballad composed by Sahir Ali Bagga along with Momina Mustehsan’s emotive vocals as an ode to undying love. #CokeStudio11
+  // {
+  //   _id: "WzlO79d3S8c",
+  //   title:
+  //     "Coke Studio Season 11 | Piya Ghar Aaya | Fareed Ayaz | Abu Muhammad Qawwal and Brothers",
+  //   creator: "Coke Studio",
+  //   views: 17810455,
+  //   uploadedAt: "Aug 24, 2018",
+  //   categoryName: "Season 11",
+  //   description: `
+  //   Coke Studio Season 11 | Episode 3
+  //   Experience the emotions of the wildly popular classic, #PiyaGharAaya, as Fareed Ayaz explains the divine notion of this Sufi kalaam accompanied with the powerful vocals of Abu Muhammad Qawwal and Brothers. #CokeStudio11
+  //   `,
+  // },
+  // {
+  //   _id: "S33PzzeozpU",
+  //   title:
+  //     "Coke Studio Season 11 | Roye Roye | Sahir Ali Bagga and Momina Mustehsan",
+  //   creator: "Coke Studio",
+  //   views: 17635769,
+  //   uploadedAt: "Aug 24, 2018",
+  //   categoryName: "Season 11",
+  //   description: `
+  //   Coke Studio Season 11 | Episode 3
+  //   Song Name: Roye Roye
+  //   #RoyeRoye is a ballad composed by Sahir Ali Bagga along with Momina Mustehsan’s emotive vocals as an ode to undying love. #CokeStudio11
 
-    Infectious, fervent, and lyrical, ‘Roye Roye’ rides on the emotional landscape of love and loneliness. Sahir Ali Bagga music is the natural descendant of love ballad that swings between the space of dramatic yet empathetic. Along side Momina Mustehsan’s riveting vocals, the song conveys the ache of unrequited love.
+  //   Infectious, fervent, and lyrical, ‘Roye Roye’ rides on the emotional landscape of love and loneliness. Sahir Ali Bagga music is the natural descendant of love ballad that swings between the space of dramatic yet empathetic. Along side Momina Mustehsan’s riveting vocals, the song conveys the ache of unrequited love.
 
-    It’s a masterclass in atmospheric delivery that evolves with traditional sound of duduk and bansuri, the ethnic sound of matka and a sentimental string section. Roye Roye instantly builds an authentic musical palette that one can resonate with.
-    `,
-  },
-  {
-    _id: "LrCek73_e_M",
-    title:
-      "Coke Studio Season 11| Shikwa/Jawab-e-Shikwa| Natasha Baig, Fareed Ayaz & Abu Muhammad Qawwal",
-    creator: "Coke Studio",
-    categoryName: "Season 11",
-    description: `
-    Coke Studio Season 11| Episode 1
-    Song Name: Shikwa/Jawab-e-Shikwa
-    The hard-hitting emotions of #ShikwaJawabEShikwa come to life as Fareed Ayaz, Abu Muhammad Qawwal & Brothers are joined by Natasha Baig in this new intense melody. Their unique rendition explores the genre of rock and the signature sound of qawwali in this one of a kind track. #CokeStudio11
-    `,
-  },
+  //   It’s a masterclass in atmospheric delivery that evolves with traditional sound of duduk and bansuri, the ethnic sound of matka and a sentimental string section. Roye Roye instantly builds an authentic musical palette that one can resonate with.
+  //   `,
+  // },
+  // {
+  //   _id: "LrCek73_e_M",
+  //   title:
+  //     "Coke Studio Season 11 | Shikwa/Jawab-e-Shikwa | Natasha Baig, Fareed Ayaz & Abu Muhammad Qawwal",
+  //   creator: "Coke Studio",
+  //   views: 20761794,
+  //   uploadedAt: "Aug 10, 2018",
+  //   categoryName: "Season 11",
+  //   description: `
+  //   Coke Studio Season 11 | Episode 1
+  //   Song Name: Shikwa/Jawab-e-Shikwa
+  //   The hard-hitting emotions of #ShikwaJawabEShikwa come to life as Fareed Ayaz, Abu Muhammad Qawwal & Brothers are joined by Natasha Baig in this new intense melody. Their unique rendition explores the genre of rock and the signature sound of qawwali in this one of a kind track. #CokeStudio11
+  //   `,
+  // },
   {
     _id: "HpfrSzRgWhs",
     title:
-      "Coke Studio Season 10| Us Rah Par| Ali Hamza & Ali Zafar feat. Strings",
+      "Coke Studio Season 10 | Us Rah Par | Ali Hamza & Ali Zafar feat. Strings",
     creator: "Coke Studio",
+    views: 7343689,
+    uploadedAt: "Sep 21, 2017",
     categoryName: "Season 10",
     description: `
-    Coke Studio Season 10| Season Finale
+    Coke Studio Season 10 | Season Finale
     Produced & Directed by Strings
     Music Directed by Jaffer Zaidi
     Originally Composed by Shoaib Mansoor
@@ -485,11 +518,13 @@ export const videos = [
   },
   {
     _id: "p3D-oqGdW9o",
-    title: "Coke Studio Season 10| Maula Tera Noor| Shafqat Amanat Ali Khan",
+    title: "Coke Studio Season 10 | Maula Tera Noor | Shafqat Amanat Ali Khan",
     creator: "Coke Studio",
+    views: 5562010,
+    uploadedAt: "Sep 21, 2017",
     categoryName: "Season 10",
     description: `
-    Coke Studio Season 10| Season Finale
+    Coke Studio Season 10 | Season Finale
     Produced & Directed by Strings
     Music Directed by Shani Arshad
     Composed by Shani Arshad
@@ -500,11 +535,13 @@ export const videos = [
   },
   {
     _id: "PePGHi6IeZQ",
-    title: "Coke Studio Season 10| Baanware| Shuja Haider & Aima Baig",
+    title: "Coke Studio Season 10 | Baanware | Shuja Haider & Aima Baig",
     creator: "Coke Studio",
+    views: 8464763,
+    uploadedAt: "Sep 21, 2017",
     categoryName: "Season 10",
     description: `
-    Coke Studio Season 10| Season Finale
+    Coke Studio Season 10 | Season Finale
     Produced & Directed by Strings
     Music Directed by Shuja Haider
     Composed by Shuja Haider
@@ -520,11 +557,13 @@ export const videos = [
   },
   {
     _id: "DngeAcpK6LI",
-    title: "Coke Studio Season 10| Ghoom Taana| Momina Mustehsan & Irteassh",
+    title: "Coke Studio Season 10 | Ghoom Taana | Momina Mustehsan & Irteassh",
     creator: "Coke Studio",
+    views: 3142604,
+    uploadedAt: "Sep 15, 2017",
     categoryName: "Season 10",
     description: `
-    Coke Studio Season 10| Episode 6
+    Coke Studio Season 10 | Episode 6
     Produced & Directed by Strings
     Music Directed by Salman Ahmad
     Composed by Salman Ahmad
@@ -537,11 +576,13 @@ export const videos = [
   {
     _id: "a2IK6XfdYss",
     title:
-      "Coke Studio Season 10| Kaatay Na Katay| Aima Baig, Humera Arshad & Rachel Viccaji",
+      "Coke Studio Season 10 | Kaatay Na Katay | Aima Baig, Humera Arshad & Rachel Viccaji",
     creator: "Coke Studio",
+    views: 4954196,
+    uploadedAt: "Sep 15, 2017",
     categoryName: "Season 10",
     description: `
-    Coke Studio Season 10| Episode 6
+    Coke Studio Season 10 | Episode 6
     Produced & Directed by Strings
     Music Directed by Ali Hamza
     Originally Composed by Nisar Bazmi
@@ -555,11 +596,13 @@ export const videos = [
   {
     _id: "Gar-Vw9UzVs",
     title:
-      "Coke Studio Season 10| Dam Mast Qalandar| Umair Jaswal & Jabar Abbas",
+      "Coke Studio Season 10 | Dam Mast Qalandar | Umair Jaswal & Jabar Abbas",
     creator: "Coke Studio",
+    views: 4036346,
+    uploadedAt: "Sep 15, 2017",
     categoryName: "Season 10",
     description: `
-    Coke Studio Season 10| Episode 6
+    Coke Studio Season 10 | Episode 6
     Produced & Directed by Strings
     Music Directed by Shuja Haider
     Originally Composed by Farrukh Fateh Ali
@@ -573,11 +616,13 @@ export const videos = [
   {
     _id: "TzdMLhGOIhA",
     title:
-      "Coke Studio Season 10| Sab Maya Hai| Attaullah Esakhelvi & Sanwal Esakhelvi",
+      "Coke Studio Season 10 | Sab Maya Hai | Attaullah Esakhelvi & Sanwal Esakhelvi",
     creator: "Coke Studio",
+    views: 22565919,
+    uploadedAt: "Sep 8, 2017",
     categoryName: "Season 10",
     description: `
-    Coke Studio Season 10| Episode 5
+    Coke Studio Season 10 | Episode 5
     Song Name: Sab Maya Hai
     Produced & Directed by Strings
     Music Directed by Shuja Haider
@@ -590,11 +635,13 @@ export const videos = [
   {
     _id: "SCOKysMnH50",
     title:
-      "Coke Studio Season 10| Latthay Di Chaadar| Quratulain Balouch & Farhan Saeed",
+      "Coke Studio Season 10 | Latthay Di Chaadar | Quratulain Balouch & Farhan Saeed",
     creator: "Coke Studio",
+    views: 32856848,
+    uploadedAt: "Sep 1, 2017",
     categoryName: "Season 10",
     description: `
-    Coke Studio Season 10| Episode 4
+    Coke Studio Season 10 | Episode 4
     Song Name: Latthay Di Chaadar
     Produced & Directed by Strings
     Music Directed by Shani Arshad
@@ -608,11 +655,13 @@ export const videos = [
   {
     _id: "XLPv-_MBFC8",
     title:
-      "Coke Studio Season 10| Mujh Se Pehli Si Muhabbat| Humera Channa & Nabeel Shaukat",
+      "Coke Studio Season 10 | Mujh Se Pehli Si Muhabbat | Humera Channa & Nabeel Shaukat",
     creator: "Coke Studio",
+    views: 7458559,
+    uploadedAt: "Aug 25, 2017",
     categoryName: "Season 10",
     description: `
-    Coke Studio Season 10| Episode 3
+    Coke Studio Season 10 | Episode 3
     Produced & Directed by Strings
     Music Directed by Mekaal Hasan
     Originally composed by Rashid Attre
@@ -625,11 +674,13 @@ export const videos = [
   {
     _id: "eoz9gr9QYes",
     title:
-      "Coke Studio Season 10| Laal Meri Pat| Quratulain Balouch ft. Akbar Ali & Arieb Azhar",
+      "Coke Studio Season 10 | Laal Meri Pat | Quratulain Balouch ft. Akbar Ali & Arieb Azhar",
     creator: "Coke Studio",
+    views: 8431649,
+    uploadedAt: "Aug 25, 2017",
     categoryName: "Season 10",
     description: `
-    Coke Studio Season 10| Episode 3
+    Coke Studio Season 10 | Episode 3
     Produced & Directed by Strings
     Music Directed by Strings
     
@@ -639,11 +690,13 @@ export const videos = [
   },
   {
     _id: "pba_YmWDAIU",
-    title: "Coke Studio Season 10| Ranjish Hi Sahi| Ali Sethi",
+    title: "Coke Studio Season 10 | Ranjish Hi Sahi | Ali Sethi",
     creator: "Coke Studio",
+    views: 20917301,
+    uploadedAt: "Aug 11, 2017",
     categoryName: "Season 10",
     description: `
-    Coke Studio Season 10| Episode 1
+    Coke Studio Season 10 | Episode 1
     Produced & Directed by Strings
     Music Directed by Jaffer Zaidi
     Originally Composed by Nisar Bazmi
@@ -654,11 +707,13 @@ export const videos = [
   },
   {
     _id: "cs9ORHI8o38",
-    title: "Coke Studio Season 10| Muntazir| Danyal Zafar & Momina Mustehsan",
+    title: "Coke Studio Season 10 | Muntazir | Danyal Zafar & Momina Mustehsan",
     creator: "Coke Studio",
+    views: 18338124,
+    uploadedAt: "Aug 11, 2017",
     categoryName: "Season 10",
     description: `
-    Coke Studio Season 10| Episode 1
+    Coke Studio Season 10 | Episode 1
     Song Name: Muntazir
     Produced & Directed by Strings
     Music Directed by Strings
@@ -668,11 +723,13 @@ export const videos = [
   {
     _id: "ZQMn5wIoAno",
     title:
-      "Coke Studio Season 9| Tu Kuja Man Kuja| Shiraz Uppal & Rafaqat Ali Khan",
+      "Coke Studio Season 9 | Tu Kuja Man Kuja | Shiraz Uppal & Rafaqat Ali Khan",
     creator: "Coke Studio",
+    views: 167184965,
+    uploadedAt: "Sep 23, 2016",
     categoryName: "Season 9",
     description: `
-    Coke Studio Season 9| Season Finale
+    Coke Studio Season 9 | Season Finale
     Song Name: Tu Kuja Man Kuja
     Original Composition by Nusrat Fateh Ali Khan
     Lyrics by Muzaffar Warsi 
@@ -683,11 +740,13 @@ export const videos = [
   },
   {
     _id: "Uks8psEpmB4",
-    title: "Coke Studio Season 9| Rang | Rahat Fateh Ali Khan & Amjad Sabri",
+    title: "Coke Studio Season 9 | Rang | Rahat Fateh Ali Khan & Amjad Sabri",
     creator: "Coke Studio",
+    views: 42383205,
+    uploadedAt: "Sep 23, 2016",
     categoryName: "Season 9",
     description: `
-    Coke Studio Season 9| Season Finale
+    Coke Studio Season 9 | Season Finale
     Song Name: Rang
     Kalaam of Ameer Khusro
     Music Directed by Shani Arshad
@@ -699,11 +758,14 @@ export const videos = [
   },
   {
     _id: "8367ETnagHo",
-    title: "Coke Studio Season 9| Tera Woh Pyar| Momina Mustehsan & Asim Azhar",
+    title:
+      "Coke Studio Season 9 | Tera Woh Pyar | Momina Mustehsan & Asim Azhar",
     creator: "Coke Studio",
+    views: 155464388,
+    uploadedAt: "Sep 16, 2016",
     categoryName: "Season 9",
     description: `
-    Coke Studio Season 9| Episode 6
+    Coke Studio Season 9 | Episode 6
     Song Name: Tera Woh Pyar
     Music Directed by Shuja Haider 
     Composed by Shuja Haider
@@ -716,11 +778,13 @@ export const videos = [
   {
     _id: "kw4tT7SCmaY",
     title:
-      "Coke Studio Season 9| Afreen Afreen| Rahat Fateh Ali Khan & Momina Mustehsan",
+      "Coke Studio Season 9 | Afreen Afreen | Rahat Fateh Ali Khan & Momina Mustehsan",
     creator: "Coke Studio",
+    views: 350633419,
+    uploadedAt: "Aug 19, 2016",
     categoryName: "Season 9",
     description: `
-    Coke Studio Season 9| Episode 2
+    Coke Studio Season 9 | Episode 2
     Song Name: Afreen Afreen
     Nusrat Fateh Ali Khan was one of the shining lights of Pakistan, a Qawwali Shahehshah whose talent was heralded both locally and globally. To celebrate the legend that still lives 19 years on, Coke Studio presents
     Afreen Afreen, Rahat Fateh Ali Khan & Momina Mustehsan, Episode 2, Coke Studio 9
