@@ -10,7 +10,7 @@ export const videos = [
       "Coke Studio | Season 14 | Phir Milenge | Faisal Kapadia x Young Stunners",
     creator: "Coke Studio",
     views: 6556853,
-    uploadedAt: "Mar 22, 2022",
+    uploadedAt: new Date("Mar 22, 2022"),
     categoryName: "Season 14",
     description: `
     Coke Studio 14
@@ -28,7 +28,7 @@ export const videos = [
     title: "Coke Studio | Season 14 | Go | Abdullah Siddiqui x Atif Aslam",
     creator: "Coke Studio",
     views: 8535948,
-    uploadedAt: "Mar 18, 2022",
+    uploadedAt: new Date("Mar 18, 2022"),
     categoryName: "Season 14",
     description: `
     Coke Studio 14
@@ -48,7 +48,7 @@ export const videos = [
       "Coke Studio | Season 14 | Thagyan | Zain Zohaib x Quratulain Balouch",
     creator: "Coke Studio",
     views: 7949227,
-    uploadedAt: "Mar 13, 2022",
+    uploadedAt: new Date("Mar 13, 2022"),
     categoryName: "Season 14",
     description: `
     Coke Studio 14
@@ -67,7 +67,7 @@ export const videos = [
     title: "Coke Studio | Season 14 | Beparwah | Momina Mustehsan",
     creator: "Coke Studio",
     views: 9722232,
-    uploadedAt: "Mar 7, 2022",
+    uploadedAt: new Date("Mar 7, 2022"),
     categoryName: "Season 14",
     description: `
     Coke Studio 14
@@ -87,7 +87,7 @@ export const videos = [
       "Coke Studio | Season 14 | Muaziz Saarif | Faris Shafi x Meesha Shafi",
     creator: "Coke Studio",
     views: 6340501,
-    uploadedAt: "Feb 27, 2022",
+    uploadedAt: new Date("Feb 27, 2022"),
     categoryName: "Season 14",
     description: `
     Coke Studio 14
@@ -107,7 +107,7 @@ export const videos = [
       "Coke Studio | Season 14 | Peechay Hutt | Justin Bibis x Talal Qureshi x Hasan Raheem",
     creator: "Coke Studio",
     views: 10697620,
-    uploadedAt: "Feb 19, 2022",
+    uploadedAt: new Date("Feb 19, 2022"),
     categoryName: "Season 14",
     description: `
     Coke Studio 14
@@ -129,7 +129,7 @@ export const videos = [
       "Coke Studio | Season 14 | Ye Dunya | Karakoram x Talha Anjum x Faris Shafi",
     creator: "Coke Studio",
     views: 6633705,
-    uploadedAt: "Feb 12, 2022",
+    uploadedAt: new Date("Feb 12, 2022"),
     categoryName: "Season 14",
     description: `
     Coke Studio 14
@@ -147,7 +147,7 @@ export const videos = [
     title: "Coke Studio | Season 14 | Pasoori | Ali Sethi x Shae Gill",
     creator: "Coke Studio",
     views: 70443390,
-    uploadedAt: "Feb 7, 2022",
+    uploadedAt: new Date("Feb 7, 2022"),
     categoryName: "Season 14",
     description: `
     Coke Studio 14
@@ -169,7 +169,7 @@ export const videos = [
       "Coke Studio | Season 14 | Neray Neray Vas | Soch The Band x Butt Brothers",
     creator: "Coke Studio",
     views: 9605031,
-    uploadedAt: "Feb 1, 2022",
+    uploadedAt: new Date("Feb 1, 2022"),
     categoryName: "Season 14",
     description: `
     Coke Studio 14
@@ -187,7 +187,7 @@ export const videos = [
     title: "Coke Studio | Season 14 | Mehram | Asfar Hussain x Arooj Aftab",
     creator: "Coke Studio",
     views: 9504975,
-    uploadedAt: "Jan 28, 2022",
+    uploadedAt: new Date("Jan 28, 2022"),
     categoryName: "Season 14",
     description: `
     Coke Studio 14
@@ -206,7 +206,7 @@ export const videos = [
       "Coke Studio | Season 14 | Sajan Das Na | Atif Aslam x Momina Mustehsan",
     creator: "Coke Studio",
     views: 11370537,
-    uploadedAt: "Jan 23, 2022",
+    uploadedAt: new Date("Jan 23, 2022"),
     categoryName: "Season 14",
     description: `
     Coke Studio 14
@@ -226,7 +226,7 @@ export const videos = [
       "Coke Studio | Season 14 | Kana Yaari | Kaifi Khalil x Eva B x Abdul Wahab Bugti",
     creator: "Coke Studio",
     views: 16103943,
-    uploadedAt: "Jan 19, 2022",
+    uploadedAt: new Date("Jan 19, 2022"),
     categoryName: "Season 14",
     description: `
     Coke Studio 14
@@ -244,7 +244,7 @@ export const videos = [
     title: "Coke Studio | Season 14 | Tu Jhoom | Naseebo Lal x Abida Parveen",
     creator: "Coke Studio",
     views: 31881382,
-    uploadedAt: "Jan 14, 2022",
+    uploadedAt: new Date("Jan 14, 2022"),
     categoryName: "Season 14",
     description: `
     Coke Studio 14
@@ -264,7 +264,7 @@ export const videos = [
     title: "Coke Studio Season 12 | Daachi Waaliya | Hadiqa Kiani",
     creator: "Coke Studio",
     views: 3405993,
-    uploadedAt: "Dec 23, 2019",
+    uploadedAt: new Date("Dec 23, 2019"),
     categoryName: "Season 12",
     description: `
     #CokeStudio12 presents Daachi Waaliya, a song that carries with it flavors of rural Punjab and the rhythm of a camel's gait. Blending the song with Sufi verses written by Bulleh Shah and Waris Shah, Hadiqa Kiani turns this classic, folk tune into a contemplative piece on the nature of love
@@ -278,7 +278,7 @@ export const videos = [
     title: "Coke Studio Season 12 | Aaye Kuch Abr | Atif Aslam",
     creator: "Coke Studio",
     views: 7056924,
-    uploadedAt: "Nov 29, 2019",
+    uploadedAt: new Date("Nov 29, 2019"),
     categoryName: "Season 12",
     description: `
     #CokeStudio12 presents an incarnation of Faiz Ahmed Faiz’s poetry in the voice of Atif Aslam with Aaye Kuch Abr. Speaking of solitude and finding personal solace in life’s little pleasures, the ghazal provides a space for one to find the common humanity in one's own experiences.  
@@ -296,7 +296,7 @@ export const videos = [
     title: "Coke Studio Season 12 | Heeray | Rahat Fateh Ali Khan & Aima Baig",
     creator: "Coke Studio",
     views: 3148405,
-    uploadedAt: "Nov 25, 2019",
+    uploadedAt: new Date("Nov 25, 2019"),
     categoryName: "Season 12",
     description: `
     #CokeStudio12 presents a modern retelling of the tale of Heer-Ranjha, brought to life in the voice of Ustad Rahat Fateh Ali Khan and Aima Baig. In a musical style that is new to his repertoire, Khan Sahab modernises this centuries-old saga, bringing it to the Heers and Ranjhas of today. 
@@ -310,7 +310,7 @@ export const videos = [
     title: "Coke Studio Season 12 | Hairaan Hua | Sanam Marvi",
     creator: "Coke Studio",
     views: 7465432,
-    uploadedAt: "Nov 15, 2019",
+    uploadedAt: new Date("Nov 15, 2019"),
     categoryName: "Season 12",
     description: `
     With poetry composed by Sachal Sarmast, Sanam Marvi graces #CokeStudio12 in Hairaan Hua, a celebration of the Ultimate Beauty of the Divine, and the love and wonder it inspires in His devotees. 
@@ -327,7 +327,7 @@ export const videos = [
     title: "Coke Studio Season 12 | Dhola | Sahir Ali Bagga & Aima Baig",
     creator: "Coke Studio",
     views: 16722474,
-    uploadedAt: "Nov 15, 2019",
+    uploadedAt: new Date("Nov 15, 2019"),
     categoryName: "Season 12",
     description: `
     Returning to #CokeStudio12 in Dhola, Sahir Ali Bagga and Aima Baig celebrate the joy and vulnerability of being in love in a conversation between two companions who have vowed to be give each other their hearts. 
@@ -341,7 +341,7 @@ export const videos = [
     title: "Coke Studio Season 12 | Gulon Main Rang | Ali Sethi",
     creator: "Coke Studio",
     views: 6026493,
-    uploadedAt: "Nov 15, 2019",
+    uploadedAt: new Date("Nov 15, 2019"),
     categoryName: "Season 12",
     description: `
     Ali Sethi takes the stage on #CokeStudio12 in Gulon Main Rang, a ghazal by Faiz Ahmed Faiz that weaves multiple layers of meanings within images of blossoming springtime and romantic yearning. 
@@ -360,7 +360,7 @@ export const videos = [
       "Coke Studio Season 12 | Mubarik Mubarik | Atif Aslam & Banur's Band",
     creator: "Coke Studio",
     views: 7873371,
-    uploadedAt: "Nov 8, 2019",
+    uploadedAt: new Date("Nov 8, 2019"),
     categoryName: "Season 12",
     description: `
     Journeying to #CokeStudio12 from Balochistan, Banur's Band collaborates with Atif Aslam in Mubarik Mubarik, a festive number showcasing melodies and rhythms that have traveled down to the Baloch people through history and tradition.
@@ -374,7 +374,7 @@ export const videos = [
     title: "Coke Studio Season 12 | Saiyaan | Shuja Haider & Rachel Viccaji",
     creator: "Coke Studio",
     views: 8697703,
-    uploadedAt: "Oct 28, 2019",
+    uploadedAt: new Date("Oct 28, 2019"),
     categoryName: "Season 12",
     description: `
     #CokeStudio12 presents Saiyaan, a duet by Shuja Haider & Rachel Viccaji that hints at the ever present feeling of selfless love, a kind so rare and oft found in folktales that have traveled down to us through time.
@@ -391,7 +391,7 @@ export const videos = [
     title: "Coke Studio Season 12 | Dam Mastam | Rahat Fateh Ali Khan",
     creator: "Coke Studio",
     views: 7547917,
-    uploadedAt: "Oct 18, 2019",
+    uploadedAt: new Date("Oct 18, 2019"),
     categoryName: "Season 12",
     description: `
     #CokeStudio12 presents Dam Mastam; composed in raag Bhimpalasi, the song uses the metaphor of being mast, a state of forgetting one's self in love of the Divine.
@@ -404,7 +404,7 @@ export const videos = [
     title: "Coke Studio Season 12 | Wohi Khuda Hai | Atif Aslam",
     creator: "Coke Studio",
     views: 52270951,
-    uploadedAt: "Oct 11, 2019",
+    uploadedAt: new Date("Oct 11, 2019"),
     categoryName: "Season 12",
     description: `
     Song Name: Wohi Khuda Hai
@@ -420,7 +420,7 @@ export const videos = [
   //     "Coke Studio Season 11| Luddi Hai Jamalo| Ali Sethi & Humaira Arshad",
   //   creator: "Coke Studio",
   //   views: 9975242,
-  //   uploadedAt: "Oct 12, 2018",
+  //   uploadedAt: new Date("Oct 12, 2018"),
   //   categoryName: "Season 11",
   //   description: `
   //   Coke Studio Season 11| Episode 8
@@ -432,7 +432,7 @@ export const videos = [
   //   title: "Coke Studio Season 11| Ballay Ballay| Abrar Ul Haq and Aima Baig",
   //   creator: "Coke Studio",
   //   views: 14982215,
-  //   uploadedAt: "Oct 5, 2018",
+  //   uploadedAt: new Date("Oct 5, 2018"),
   //   categoryName: "Season 11",
   //   description: `
   //   Coke Studio Season 11| Episode 7
@@ -445,7 +445,7 @@ export const videos = [
     title: "Coke Studio Season 11 | Hawa Hawa | Gul Panrra & Hassan Jahangir",
     creator: "Coke Studio",
     views: 28024525,
-    uploadedAt: "Sep 28, 2018",
+    uploadedAt: new Date("Sep 28, 2018"),
     categoryName: "Season 11",
     description: `
     Coke Studio Season 11 | Episode 6
@@ -459,7 +459,7 @@ export const videos = [
   //     "Coke Studio Season 11 | Piya Ghar Aaya | Fareed Ayaz | Abu Muhammad Qawwal and Brothers",
   //   creator: "Coke Studio",
   //   views: 17810455,
-  //   uploadedAt: "Aug 24, 2018",
+  //   uploadedAt: new Date("Aug 24, 2018"),
   //   categoryName: "Season 11",
   //   description: `
   //   Coke Studio Season 11 | Episode 3
@@ -472,7 +472,7 @@ export const videos = [
   //     "Coke Studio Season 11 | Roye Roye | Sahir Ali Bagga and Momina Mustehsan",
   //   creator: "Coke Studio",
   //   views: 17635769,
-  //   uploadedAt: "Aug 24, 2018",
+  //   uploadedAt: new Date("Aug 24, 2018"),
   //   categoryName: "Season 11",
   //   description: `
   //   Coke Studio Season 11 | Episode 3
@@ -490,7 +490,7 @@ export const videos = [
   //     "Coke Studio Season 11 | Shikwa/Jawab-e-Shikwa | Natasha Baig, Fareed Ayaz & Abu Muhammad Qawwal",
   //   creator: "Coke Studio",
   //   views: 20761794,
-  //   uploadedAt: "Aug 10, 2018",
+  //   uploadedAt: new Date("Aug 10, 2018"),
   //   categoryName: "Season 11",
   //   description: `
   //   Coke Studio Season 11 | Episode 1
@@ -504,7 +504,7 @@ export const videos = [
       "Coke Studio Season 10 | Us Rah Par | Ali Hamza & Ali Zafar feat. Strings",
     creator: "Coke Studio",
     views: 7343689,
-    uploadedAt: "Sep 21, 2017",
+    uploadedAt: new Date("Sep 21, 2017"),
     categoryName: "Season 10",
     description: `
     Coke Studio Season 10 | Season Finale
@@ -521,7 +521,7 @@ export const videos = [
     title: "Coke Studio Season 10 | Maula Tera Noor | Shafqat Amanat Ali Khan",
     creator: "Coke Studio",
     views: 5562010,
-    uploadedAt: "Sep 21, 2017",
+    uploadedAt: new Date("Sep 21, 2017"),
     categoryName: "Season 10",
     description: `
     Coke Studio Season 10 | Season Finale
@@ -538,7 +538,7 @@ export const videos = [
     title: "Coke Studio Season 10 | Baanware | Shuja Haider & Aima Baig",
     creator: "Coke Studio",
     views: 8464763,
-    uploadedAt: "Sep 21, 2017",
+    uploadedAt: new Date("Sep 21, 2017"),
     categoryName: "Season 10",
     description: `
     Coke Studio Season 10 | Season Finale
@@ -560,7 +560,7 @@ export const videos = [
     title: "Coke Studio Season 10 | Ghoom Taana | Momina Mustehsan & Irteassh",
     creator: "Coke Studio",
     views: 3142604,
-    uploadedAt: "Sep 15, 2017",
+    uploadedAt: new Date("Sep 15, 2017"),
     categoryName: "Season 10",
     description: `
     Coke Studio Season 10 | Episode 6
@@ -579,7 +579,7 @@ export const videos = [
       "Coke Studio Season 10 | Kaatay Na Katay | Aima Baig, Humera Arshad & Rachel Viccaji",
     creator: "Coke Studio",
     views: 4954196,
-    uploadedAt: "Sep 15, 2017",
+    uploadedAt: new Date("Sep 15, 2017"),
     categoryName: "Season 10",
     description: `
     Coke Studio Season 10 | Episode 6
@@ -599,7 +599,7 @@ export const videos = [
       "Coke Studio Season 10 | Dam Mast Qalandar | Umair Jaswal & Jabar Abbas",
     creator: "Coke Studio",
     views: 4036346,
-    uploadedAt: "Sep 15, 2017",
+    uploadedAt: new Date("Sep 15, 2017"),
     categoryName: "Season 10",
     description: `
     Coke Studio Season 10 | Episode 6
@@ -619,7 +619,7 @@ export const videos = [
       "Coke Studio Season 10 | Sab Maya Hai | Attaullah Esakhelvi & Sanwal Esakhelvi",
     creator: "Coke Studio",
     views: 22565919,
-    uploadedAt: "Sep 8, 2017",
+    uploadedAt: new Date("Sep 8, 2017"),
     categoryName: "Season 10",
     description: `
     Coke Studio Season 10 | Episode 5
@@ -638,7 +638,7 @@ export const videos = [
       "Coke Studio Season 10 | Latthay Di Chaadar | Quratulain Balouch & Farhan Saeed",
     creator: "Coke Studio",
     views: 32856848,
-    uploadedAt: "Sep 1, 2017",
+    uploadedAt: new Date("Sep 1, 2017"),
     categoryName: "Season 10",
     description: `
     Coke Studio Season 10 | Episode 4
@@ -658,7 +658,7 @@ export const videos = [
       "Coke Studio Season 10 | Mujh Se Pehli Si Muhabbat | Humera Channa & Nabeel Shaukat",
     creator: "Coke Studio",
     views: 7458559,
-    uploadedAt: "Aug 25, 2017",
+    uploadedAt: new Date("Aug 25, 2017"),
     categoryName: "Season 10",
     description: `
     Coke Studio Season 10 | Episode 3
@@ -677,7 +677,7 @@ export const videos = [
       "Coke Studio Season 10 | Laal Meri Pat | Quratulain Balouch ft. Akbar Ali & Arieb Azhar",
     creator: "Coke Studio",
     views: 8431649,
-    uploadedAt: "Aug 25, 2017",
+    uploadedAt: new Date("Aug 25, 2017"),
     categoryName: "Season 10",
     description: `
     Coke Studio Season 10 | Episode 3
@@ -693,7 +693,7 @@ export const videos = [
     title: "Coke Studio Season 10 | Ranjish Hi Sahi | Ali Sethi",
     creator: "Coke Studio",
     views: 20917301,
-    uploadedAt: "Aug 11, 2017",
+    uploadedAt: new Date("Aug 11, 2017"),
     categoryName: "Season 10",
     description: `
     Coke Studio Season 10 | Episode 1
@@ -710,7 +710,7 @@ export const videos = [
     title: "Coke Studio Season 10 | Muntazir | Danyal Zafar & Momina Mustehsan",
     creator: "Coke Studio",
     views: 18338124,
-    uploadedAt: "Aug 11, 2017",
+    uploadedAt: new Date("Aug 11, 2017"),
     categoryName: "Season 10",
     description: `
     Coke Studio Season 10 | Episode 1
@@ -726,7 +726,7 @@ export const videos = [
       "Coke Studio Season 9 | Tu Kuja Man Kuja | Shiraz Uppal & Rafaqat Ali Khan",
     creator: "Coke Studio",
     views: 167184965,
-    uploadedAt: "Sep 23, 2016",
+    uploadedAt: new Date("Sep 23, 2016"),
     categoryName: "Season 9",
     description: `
     Coke Studio Season 9 | Season Finale
@@ -743,7 +743,7 @@ export const videos = [
     title: "Coke Studio Season 9 | Rang | Rahat Fateh Ali Khan & Amjad Sabri",
     creator: "Coke Studio",
     views: 42383205,
-    uploadedAt: "Sep 23, 2016",
+    uploadedAt: new Date("Sep 23, 2016"),
     categoryName: "Season 9",
     description: `
     Coke Studio Season 9 | Season Finale
@@ -762,7 +762,7 @@ export const videos = [
       "Coke Studio Season 9 | Tera Woh Pyar | Momina Mustehsan & Asim Azhar",
     creator: "Coke Studio",
     views: 155464388,
-    uploadedAt: "Sep 16, 2016",
+    uploadedAt: new Date("Sep 16, 2016"),
     categoryName: "Season 9",
     description: `
     Coke Studio Season 9 | Episode 6
@@ -781,7 +781,7 @@ export const videos = [
       "Coke Studio Season 9 | Afreen Afreen | Rahat Fateh Ali Khan & Momina Mustehsan",
     creator: "Coke Studio",
     views: 350633419,
-    uploadedAt: "Aug 19, 2016",
+    uploadedAt: new Date("Aug 19, 2016"),
     categoryName: "Season 9",
     description: `
     Coke Studio Season 9 | Episode 2
