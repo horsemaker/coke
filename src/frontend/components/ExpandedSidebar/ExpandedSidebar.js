@@ -19,7 +19,7 @@ export const ExpandedSidebar = () => {
   const windowSize = useWindowSize();
 
   useOnClickOutside(expandedSidebarRef, () => {
-    if (windowSize.width <= 700) {
+    if (windowSize.width <= 950) {
       setShowSidebar(false);
     }
   });
@@ -27,7 +27,7 @@ export const ExpandedSidebar = () => {
   const navigate = useNavigate();
 
   const linkClickHandler = () => {
-    if (windowSize.width <= 700) {
+    if (windowSize.width <= 950) {
       setShowSidebar(false);
     }
   };

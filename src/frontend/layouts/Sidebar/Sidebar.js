@@ -20,7 +20,7 @@ export const Sidebar = () => {
         <ExpandedSidebar />
       </div>
     ) : (
-      windowSize.width > 700 && (
+      windowSize.width > 950 && (
         <div className="sidebar">
           <ShrinkedSidebar />
         </div>
