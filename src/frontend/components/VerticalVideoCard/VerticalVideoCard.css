@@ -46,6 +46,7 @@
 
 .vertical-video-card-secondary {
   font-size: 0.875rem;
+  color: var(--color-foreground-accent-three);
   display: flex;
   flex-wrap: wrap;
   align-items: center;
