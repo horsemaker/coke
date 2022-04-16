@@ -1,0 +1,12 @@
+.explore-page {
+  margin: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.videos-section {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2.5rem 1rem;
+}
