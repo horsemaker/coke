@@ -15,13 +15,15 @@ export const VerticalVideoCard = ({ video }) => {
       />
       <div className="vertical-video-card-primary">
         <p className="vertical-video-card-title">{title}</p>
-        <span class="material-icons vertical-video-card-more">more_vert</span>
+        <span className="material-icons vertical-video-card-more">
+          more_vert
+        </span>
       </div>
       <div className="vertical-video-card-secondary">
         <span className="vertical-video-card-views">
           {nFormatter(views, 1)} views
         </span>
-        <span class="material-icons vertical-video-card-secondary-separator">
+        <span className="material-icons vertical-video-card-secondary-separator">
           fiber_manual_record
         </span>
         <Moment fromNow>{uploadedAt}</Moment>
