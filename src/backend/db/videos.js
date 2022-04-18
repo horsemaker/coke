@@ -14,12 +14,20 @@ export const videos = [
     categoryName: "Season 14",
     description: `
     Coke Studio 14
+    <br/>
     Curated & Produced by Xulfi
+    <br/>
 
     Song Narrative: Adnan Dhool & Xulfi
+    <br/>
     Composed by Xulfi
-    Written by Adnan Dhool, Talha Anjum, Talha Yunus, Additional Lyrics by Xulfi
+    <br/>
+    Written by Adnan Dhool, Talha Anjum, Talha Yunus
+    <br/>
+    Additional Lyrics by Xulfi
+    <br/>
     Music Arranged & Produced by Xulfi & Abdullah Siddiqui
+    <br/>
     Mixed by Xulfi
     `,
   },
