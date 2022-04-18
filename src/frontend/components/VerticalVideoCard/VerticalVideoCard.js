@@ -1,13 +1,19 @@
 import React from "react";
 import Moment from "react-moment";
+import { useNavigate } from "react-router-dom";
 import { nFormatter } from "../../utils";
 import "./VerticalVideoCard.css";
 
 export const VerticalVideoCard = ({ video }) => {
   const { _id, title, views, uploadedAt } = video;
 
+  const navigate = useNavigate();
+
   return (
-    <div className="vertical-video-card">
+    <div
+      className="vertical-video-card"
+      onClick={() => navigate(`/explore/${_id}`)}
+    >
       <img
         className="vertical-video-card-img"
         src={`https://img.youtube.com/vi/${_id}/maxresdefault.jpg`}
