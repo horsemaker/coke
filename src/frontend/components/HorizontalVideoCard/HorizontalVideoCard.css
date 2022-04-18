@@ -1,0 +1,62 @@
+.horizontal-video-card {
+  cursor: pointer;
+  display: flex;
+  gap: 0.5rem;
+}
+
+.horizontal-video-card-img {
+  width: 40%;
+}
+
+.horizontal-video-card-primary {
+  display: flex;
+}
+
+.horizontal-video-card-title {
+  font-weight: 500;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+
+.horizontal-video-card-more {
+  visibility: hidden;
+  padding: 0.25rem 0.5rem;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  aspect-ratio: 1 / 1;
+}
+
+.horizontal-video-card:hover .horizontal-video-card-more {
+  visibility: visible;
+}
+
+.horizontal-video-card-more:hover {
+  background-color: var(--color-background-accent-one);
+}
+
+.horizontal-video-card-info {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.horizontal-video-card-secondary {
+  font-size: 0.875rem;
+  color: var(--color-foreground-accent-three);
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+@media screen and (max-width: 800px) {
+  .horizontal-video-card-more{
+    visibility: visible;
+  }
+}
