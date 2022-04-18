@@ -1,5 +1,5 @@
 import React from "react";
-import ReactDOM from "react-dom/client";
+import ReactDOM from "react-dom";
 import App from "./App";
 import { CombinedProvider } from "./frontend/provider";
 import { makeServer } from "./server";
@@ -7,11 +7,11 @@ import { makeServer } from "./server";
 // Call make Server
 makeServer();
 
-const root = ReactDOM.createRoot(document.getElementById("root"));
-root.render(
+ReactDOM.render(
   <React.StrictMode>
     <CombinedProvider>
       <App />
     </CombinedProvider>
-  </React.StrictMode>
+  </React.StrictMode>,
+  document.getElementById("root")
 );
