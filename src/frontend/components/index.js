@@ -7,3 +7,5 @@ export { ShrinkedSidebar } from "./ShrinkedSidebar/ShrinkedSidebar";
 export { ExpandedSidebar } from "./ExpandedSidebar/ExpandedSidebar";
 export { Categories } from "./Categories/Categories";
 export { VerticalVideoCard } from "./VerticalVideoCard/VerticalVideoCard";
+export { HorizontalVideoCard } from "./HorizontalVideoCard/HorizontalVideoCard";
+export { ScrollToTop } from "./ScrollToTop/ScrollToTop";
