@@ -1,0 +1,24 @@
+.empty-state-page {
+  margin: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.empty-state-page-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.empty-state-page-img {
+  width: 25rem;
+  max-width: 100%;
+}
+
+@media screen and (max-width: 480px) {
+  .empty-state-page {
+    margin-top: 5rem;
+  }
+}

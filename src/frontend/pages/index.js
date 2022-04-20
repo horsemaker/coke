@@ -6,3 +6,4 @@ export { VideoPage } from "./VideoPage/VideoPage";
 export { LikesPage } from "./LikesPage/LikesPage";
 export { WatchLaterPage } from "./WatchLaterPage/WatchLaterPage";
 export { HistoryPage } from "./HistoryPage/HistoryPage";
+export { EmptyStatePage } from "./EmptyStatePage/EmptyStatePage";
