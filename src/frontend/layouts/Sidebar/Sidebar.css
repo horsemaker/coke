@@ -7,7 +7,7 @@
 
 @media screen and (max-width: 950px) {
   .sidebar {
-    background-color: var(--color-background-transparent);
+    background-color: var(--color-background-transparent-one);
     position: fixed;
     margin-top: 0;
     top: 0;
