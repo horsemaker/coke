@@ -10,3 +10,4 @@ export { VerticalVideoCard } from "./VerticalVideoCard/VerticalVideoCard";
 export { HorizontalVideoCard } from "./HorizontalVideoCard/HorizontalVideoCard";
 export { ScrollToTop } from "./ScrollToTop/ScrollToTop";
 export { RequireAuth } from "./RequireAuth/RequireAuth";
+export { BigHorizontalVideoCard } from "./BigHorizontalVideoCard/BigHorizontalVideoCard";
