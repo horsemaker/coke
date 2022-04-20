@@ -4,9 +4,13 @@ import {
   AuthProvider,
   CategoriesProvider,
   FiltersProvider,
+  HistoryProvider,
+  LikesProvider,
+  PlaylistsProvider,
   SidebarProvider,
   ThemeProvider,
   VideosProvider,
+  WatchLaterProvider,
 } from "../contexts";
 
 export const CombinedProvider = ({ children }) => {
@@ -17,7 +21,15 @@ export const CombinedProvider = ({ children }) => {
           <SidebarProvider>
             <VideosProvider>
               <CategoriesProvider>
-                <FiltersProvider>{children}</FiltersProvider>
+                <FiltersProvider>
+                  <LikesProvider>
+                    <WatchLaterProvider>
+                      <HistoryProvider>
+                        <PlaylistsProvider>{children}</PlaylistsProvider>
+                      </HistoryProvider>
+                    </WatchLaterProvider>
+                  </LikesProvider>
+                </FiltersProvider>
               </CategoriesProvider>
             </VideosProvider>
           </SidebarProvider>
