@@ -1,0 +1,82 @@
+.big-horizontal-video-card {
+  cursor: pointer;
+  height: 5.5rem;
+  padding: 0.5rem;
+  display: flex;
+  gap: 0.5rem;
+}
+
+.big-horizontal-video-card:hover {
+  background-color: var(--color-background-hover);
+}
+
+.big-horizontal-video-card-img {
+  height: 100%;
+}
+
+.big-horizontal-video-card-info {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.big-horizontal-video-card-primary {
+  display: flex;
+  gap: 0.25rem;
+}
+
+.big-horizontal-video-card-title {
+  font-weight: 500;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+
+.big-horizontal-video-card-secondary {
+  font-size: 0.875rem;
+  color: var(--color-foreground-accent-three);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  line-clamp: 1;
+  -webkit-box-orient: vertical;
+}
+
+.big-horizontal-video-card-secondary > span {
+  margin-right: 0.5rem;
+}
+
+.big-horizontal-video-card-more {
+  align-self: flex-start;
+  margin-left: auto;
+  visibility: hidden;
+  padding: 0.25rem 0.5rem;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  aspect-ratio: 1 / 1;
+}
+
+.big-horizontal-video-card:hover .big-horizontal-video-card-more {
+  visibility: visible;
+}
+
+.big-horizontal-video-card-more:hover {
+  background-color: var(--color-background-accent-one);
+}
+
+@media screen and (max-width: 1024px) {
+  .big-horizontal-video-card {
+    padding: 0;
+  }
+
+  .big-horizontal-video-card-more {
+    visibility: visible;
+  }
+}
