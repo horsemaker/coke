@@ -7,7 +7,12 @@ export const removeVideoFromPlaylistService = async (
 ) => {
   try {
     const { data } = await axios.delete(
-      `/api/user/playlists/${playlistId}/${videoId}`
+      `/api/user/playlists/${playlistId}/${videoId}`,
+      {
+        headers: {
+          authorization: token,
+        },
+      }
     );
     return data.playlist;
   } catch (error) {
