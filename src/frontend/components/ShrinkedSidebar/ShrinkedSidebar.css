@@ -16,6 +16,10 @@
   aspect-ratio: 1 / 1;
 }
 
+.shrinked-sidebar-link:hover {
+  background-color: var(--color-background-hover);
+}
+
 @media screen and (max-width: 950px) {
   .shrinked-sidebar {
     display: none;
