@@ -69,7 +69,7 @@ export const ShrinkedSidebar = () => {
         </span>
       </NavLink>
       <NavLink
-        to="/likedvideos"
+        to="/likes"
         className={({ isActive }) =>
           isActive
             ? "shrinked-sidebar-link active-link"

@@ -1,19 +1,42 @@
 import React, { useRef, useState, useEffect } from "react";
-import { useParams } from "react-router-dom";
+import { useLocation, useNavigate, useParams } from "react-router-dom";
 import ReactPlayer from "react-player/youtube";
 import Moment from "react-moment";
-import { useSidebar, useVideos } from "../../contexts";
-import "./VideoPage.css";
+import {
+  useAuth,
+  useHistory,
+  useLikes,
+  useSidebar,
+  useVideos,
+  useWatchLater,
+} from "../../contexts";
 import { HorizontalVideoCard } from "../../components";
+import {
+  addHistoryService,
+  addLikeService,
+  addWatchLaterService,
+  removeHistoryService,
+  removeLikeService,
+  removeWatchLaterService,
+} from "../../services";
+import { SET_HISTORY, SET_LIKES, SET_WATCH_LATER } from "../../constants";
+import "./VideoPage.css";
 
 export const VideoPage = () => {
   const videoPageRef = useRef();
   const [videoPageWidth, setVideoPageWidth] = useState();
 
   const { videoId } = useParams();
+  const navigate = useNavigate();
+  const location = useLocation();
 
+  const { auth } = useAuth();
   const { showSidebar } = useSidebar();
   const { videos } = useVideos();
+  const { likes, dispatchLikes } = useLikes();
+  const { watchLater, dispatchWatchLater } = useWatchLater();
+  const { history, dispatchHistory } = useHistory();
+
   const currentVideo = videos.find((video) => video._id === videoId);
 
   const getVideoPageSize = () => {
@@ -28,6 +51,69 @@ export const VideoPage = () => {
   useEffect(() => {
     window.addEventListener("resize", getVideoPageSize);
   }, []);
+
+  const addLikeHandler = async () => {
+    const addLikeResponse = await addLikeService(auth.token, currentVideo);
+    if (addLikeResponse !== undefined) {
+      dispatchLikes({ type: SET_LIKES, payload: addLikeResponse });
+    }
+  };
+
+  const removeLikeHandler = async () => {
+    const removeLikeResponse = await removeLikeService(auth.token, videoId);
+    if (removeLikeResponse !== undefined) {
+      dispatchLikes({ type: SET_LIKES, payload: removeLikeResponse });
+    }
+  };
+
+  const addWatchLaterHandler = async () => {
+    const addWatchLaterResponse = await addWatchLaterService(
+      auth.token,
+      currentVideo
+    );
+    if (addWatchLaterResponse !== undefined) {
+      dispatchWatchLater({
+        type: SET_WATCH_LATER,
+        payload: addWatchLaterResponse,
+      });
+    }
+  };
+
+  const removeWatchLaterHandler = async () => {
+    const removeWatchLaterResponse = await removeWatchLaterService(
+      auth.token,
+      videoId
+    );
+    if (removeWatchLaterResponse !== undefined) {
+      dispatchWatchLater({
+        type: SET_WATCH_LATER,
+        payload: removeWatchLaterResponse,
+      });
+    }
+  };
+
+  const removeHistoryHandler = async () => {
+    const removeHistoryResponse = await removeHistoryService(
+      auth.token,
+      videoId
+    );
+    if (removeHistoryResponse !== undefined) {
+      dispatchHistory({ type: SET_HISTORY, payload: removeHistoryResponse });
+    }
+  };
+
+  const addHistoryHandler = async () => {
+    if (history.find((historyVideo) => historyVideo._id === videoId)) {
+      removeHistoryHandler();
+    }
+    const addHistoryResponse = await addHistoryService(
+      auth.token,
+      currentVideo
+    );
+    if (addHistoryResponse !== undefined) {
+      dispatchHistory({ type: SET_HISTORY, payload: addHistoryResponse });
+    }
+  };
 
   return (
     <div
@@ -47,6 +133,8 @@ export const VideoPage = () => {
             height="100%"
             url={`http://www.youtube.com/watch?v=${videoId}`}
             controls
+            playing
+            onStart={() => auth.status && addHistoryHandler()}
           />
         </div>
         <div className="video-section-primary">
@@ -60,22 +148,66 @@ export const VideoPage = () => {
               <Moment fromNow>{currentVideo?.uploadedAt}</Moment>
             </div>
             <div className="video-info-secondary">
-              <button className="video-action-button">
-                <span
-                  className="material-icons-outlined video-icon"
-                  title="I like this"
+              {likes?.find((like) => like._id === videoId) ? (
+                <button
+                  className="video-action-button"
+                  onClick={removeLikeHandler}
                 >
-                  thumb_up
-                </span>
-              </button>
-              <button className="video-action-button">
-                <span
-                  className="material-icons-outlined video-icon"
-                  title="I will watch this later"
+                  <span
+                    className="material-icons video-icon"
+                    title="I like this"
+                  >
+                    thumb_up
+                  </span>
+                </button>
+              ) : (
+                <button
+                  className="video-action-button"
+                  onClick={() =>
+                    auth.status
+                      ? addLikeHandler()
+                      : navigate("/signin", { state: { from: location } })
+                  }
                 >
-                  watch_later
-                </span>
-              </button>
+                  <span
+                    className="material-icons-outlined video-icon"
+                    title="I like this"
+                  >
+                    thumb_up
+                  </span>
+                </button>
+              )}
+              {watchLater?.find(
+                (watchLaterVideo) => watchLaterVideo._id === videoId
+              ) ? (
+                <button
+                  className="video-action-button"
+                  onClick={removeWatchLaterHandler}
+                >
+                  <span
+                    className="material-icons video-icon"
+                    title="I will watch this later"
+                  >
+                    watch_later
+                  </span>
+                </button>
+              ) : (
+                <button
+                  className="video-action-button"
+                  onClick={() =>
+                    auth.status
+                      ? addWatchLaterHandler()
+                      : navigate("/signin", { state: { from: location } })
+                  }
+                >
+                  <span
+                    className="material-icons-outlined video-icon"
+                    title="I will watch this later"
+                  >
+                    watch_later
+                  </span>
+                </button>
+              )}
               <button className="video-action-button">
                 <span
                   className="material-icons video-icon"

@@ -5,7 +5,6 @@ const VideosContext = createContext();
 
 const VideosProvider = ({ children }) => {
   const [videos, setVideos] = useState([]);
-  // console.log(videos);
 
   useEffect(() => {
     (async () => {
