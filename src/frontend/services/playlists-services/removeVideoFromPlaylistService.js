@@ -11,7 +11,7 @@ export const removeVideoFromPlaylistService = async (
     );
     return data.playlist;
   } catch (error) {
-    console.log(error.message);
+    console.error(error.message);
     return;
   }
 };
