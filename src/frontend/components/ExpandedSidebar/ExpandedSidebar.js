@@ -125,7 +125,7 @@ export const ExpandedSidebar = () => {
         <span className="sidebar-option">Watch Later</span>
       </NavLink>
       <NavLink
-        to="/likedvideos"
+        to="/likes"
         className={({ isActive }) =>
           isActive
             ? "expanded-sidebar-link active-link"
