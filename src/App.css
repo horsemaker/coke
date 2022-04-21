@@ -14,7 +14,9 @@
   --color-cta: #e60003;
 
   --color-background: #181818;
-  --color-background-transparent: #18181880;
+  --color-background-transparent-one: #18181880;
+  --color-background-transparent-two: #181818df;
+  --color-background-hover: #1f1f1f;
   --color-background-accent-one: #2f2f2f;
   --color-background-accent-two: #464646;
   --color-background-accent-three: #5d5d5d;
@@ -33,7 +35,9 @@
   --color-cta: #e60003;
 
   --color-background: #ffffff;
-  --color-background-transparent: #ffffff80;
+  --color-background-transparent-one: #ffffff80;
+  --color-background-transparent-two: #ffffffdf;
+  --color-background-hover: #f8f8f8;
   --color-background-accent-one: #e6e6e6;
   --color-background-accent-two: #cccccc;
   --color-background-accent-three: #b3b3b3;

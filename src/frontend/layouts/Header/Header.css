@@ -30,7 +30,7 @@
 }
 
 .nav-menu:hover {
-  background-color: var(--color-background-accent-one);
+  background-color: var(--color-background-hover);
 }
 
 .nav-menu:focus {
