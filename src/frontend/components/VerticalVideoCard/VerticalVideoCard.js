@@ -1,11 +1,16 @@
-import React from "react";
-import Moment from "react-moment";
+import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
+import Moment from "react-moment";
+import { CardDropdown } from "../CardDropdown/CardDropdown";
+import { PlaylistsModal } from "../PlaylistsModal/PlaylistsModal";
 import { nFormatter } from "../../utils";
 import "./VerticalVideoCard.css";
 
 export const VerticalVideoCard = ({ video }) => {
   const { _id, title, views, uploadedAt } = video;
+
+  const [showPlaylistsModal, setShowPlaylistsModal] = useState(false);
+  const [isDropdownMenuOpen, setIsDropdownMenuOpen] = useState(false);
 
   const navigate = useNavigate();
 
@@ -13,6 +18,7 @@ export const VerticalVideoCard = ({ video }) => {
     <div
       className="vertical-video-card"
       onClick={() => navigate(`/explore/${_id}`)}
+      onMouseLeave={() => setIsDropdownMenuOpen(false)}
     >
       <img
         className="vertical-video-card-img"
@@ -21,9 +27,14 @@ export const VerticalVideoCard = ({ video }) => {
       />
       <div className="vertical-video-card-primary">
         <p className="vertical-video-card-title">{title}</p>
-        <span className="material-icons vertical-video-card-more">
-          more_vert
-        </span>
+        <div className="vertical-video-card-more">
+          <CardDropdown
+            video={video}
+            isDropdownMenuOpen={isDropdownMenuOpen}
+            setIsDropdownMenuOpen={setIsDropdownMenuOpen}
+            showPlaylistModal={() => setShowPlaylistsModal(true)}
+          />
+        </div>
       </div>
       <div className="vertical-video-card-secondary">
         <span className="vertical-video-card-views">
@@ -34,6 +45,12 @@ export const VerticalVideoCard = ({ video }) => {
         </span>
         <Moment fromNow>{uploadedAt}</Moment>
       </div>
+      {showPlaylistsModal && (
+        <PlaylistsModal
+          video={video}
+          closePlaylistModal={() => setShowPlaylistsModal(false)}
+        />
+      )}
     </div>
   );
 };

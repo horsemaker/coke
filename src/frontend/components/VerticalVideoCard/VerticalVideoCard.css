@@ -33,20 +33,10 @@
 
 .vertical-video-card-more {
   visibility: hidden;
-  padding: 0.25rem 0.5rem;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  aspect-ratio: 1 / 1;
 }
 
 .vertical-video-card:hover .vertical-video-card-more {
   visibility: visible;
-}
-
-.vertical-video-card-more:hover {
-  background-color: var(--color-background-accent-one);
 }
 
 .vertical-video-card-secondary {
@@ -90,7 +80,7 @@
 }
 
 @media screen and (max-width: 800px) {
-  .vertical-video-card-more{
+  .vertical-video-card-more {
     visibility: visible;
   }
 }
