@@ -14,11 +14,13 @@ export const WatchLaterPage = () => {
         <div className="user-property-page-cover-media">
           <img
             className="user-property-page-cover-img"
-            src={`https://img.youtube.com/vi/${watchLater[0]._id}/maxresdefault.jpg`}
+            src={`https://img.youtube.com/vi/${
+              watchLater[watchLater.length - 1]._id
+            }/maxresdefault.jpg`}
             alt="Watch Later Videos"
           />
           <div className="user-property-page-cover-title">
-            <span class="material-icons">watch_later</span>
+            <span className="material-icons">watch_later</span>
             <span>Watch Later</span>
           </div>
         </div>
