@@ -6,6 +6,7 @@ import {
   HistoryPage,
   HomePage,
   LikesPage,
+  PlaylistPage,
   SignInPage,
   SignUpPage,
   VideoPage,
@@ -43,6 +44,14 @@ export const Main = () => {
           element={
             <RequireAuth>
               <HistoryPage />
+            </RequireAuth>
+          }
+        />
+        <Route
+          path="/playlists/:playlistId"
+          element={
+            <RequireAuth>
+              <PlaylistPage />
             </RequireAuth>
           }
         />
