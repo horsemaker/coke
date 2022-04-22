@@ -1,11 +1,16 @@
-import React from "react";
-import Moment from "react-moment";
+import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
+import Moment from "react-moment";
+import { CardDropdown } from "../CardDropdown/CardDropdown";
+import { PlaylistsModal } from "../PlaylistsModal/PlaylistsModal";
 import { nFormatter } from "../../utils";
 import "./BigHorizontalVideoCard.css";
 
 export const BigHorizontalVideoCard = ({ video }) => {
   const { _id, title, views, uploadedAt } = video;
+
+  const [showPlaylistsModal, setShowPlaylistsModal] = useState(false);
+  const [isDropdownMenuOpen, setIsDropdownMenuOpen] = useState(false);
 
   const navigate = useNavigate();
 
@@ -13,6 +18,7 @@ export const BigHorizontalVideoCard = ({ video }) => {
     <div
       className="big-horizontal-video-card"
       onClick={() => navigate(`/explore/${_id}`)}
+      onMouseLeave={() => setIsDropdownMenuOpen(false)}
     >
       <img
         className="big-horizontal-video-card-img"
@@ -33,9 +39,20 @@ export const BigHorizontalVideoCard = ({ video }) => {
           <Moment fromNow>{uploadedAt}</Moment>
         </div>
       </div>
-      <span className="material-icons big-horizontal-video-card-more">
-        more_vert
-      </span>
+      <div className="big-horizontal-video-card-more">
+        <CardDropdown
+          video={video}
+          isDropdownMenuOpen={isDropdownMenuOpen}
+          setIsDropdownMenuOpen={setIsDropdownMenuOpen}
+          showPlaylistModal={() => setShowPlaylistsModal(true)}
+        />
+      </div>
+      {showPlaylistsModal && (
+        <PlaylistsModal
+          video={video}
+          closePlaylistModal={() => setShowPlaylistsModal(false)}
+        />
+      )}
     </div>
   );
 };

@@ -55,20 +55,10 @@
   align-self: flex-start;
   margin-left: auto;
   visibility: hidden;
-  padding: 0.25rem 0.5rem;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  aspect-ratio: 1 / 1;
 }
 
 .big-horizontal-video-card:hover .big-horizontal-video-card-more {
   visibility: visible;
-}
-
-.big-horizontal-video-card-more:hover {
-  background-color: var(--color-background-accent-one);
 }
 
 @media screen and (max-width: 1024px) {
