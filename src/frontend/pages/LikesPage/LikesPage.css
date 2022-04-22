@@ -40,9 +40,10 @@
 }
 
 .user-property-page-videos {
+  align-self: flex-start;
   flex-grow: 1;
   display: flex;
-  flex-direction: column;
+  flex-direction: column-reverse;
 }
 
 @media screen and (max-width: 1024px) {
