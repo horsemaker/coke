@@ -1,0 +1,39 @@
+.card-dropdown {
+  position: relative;
+}
+
+.card-dropdown-icon {
+  padding: 0.25rem 0.5rem;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  aspect-ratio: 1 / 1;
+}
+
+.card-dropdown-icon:hover {
+  background-color: var(--color-background-accent-one);
+}
+
+.card-dropdown-menu {
+  position: absolute;
+  top: 110%;
+  right: 0;
+  width: max-content;
+  text-align: center;
+  border-radius: 5px;
+  box-shadow: var(--box-shadow);
+}
+
+.card-dropdown-menu > ul {
+  background-color: var(--color-background-accent-one);
+  border: none;
+}
+
+.card-dropdown-menu > ul > li {
+  border-color: var(--color-background-accent-two);
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+}
