@@ -5,4 +5,4 @@ export { CATEGORY } from "./filters-constants";
 export { SET_LIKES } from "./likes-constants";
 export { SET_WATCH_LATER } from "./watch-later-constants";
 export { SET_HISTORY } from "./history-constants";
-export { SET_PLAYLISTS } from "./playlists-constants";
+export { SET_PLAYLISTS, SET_PLAYLIST } from "./playlists-constants";
