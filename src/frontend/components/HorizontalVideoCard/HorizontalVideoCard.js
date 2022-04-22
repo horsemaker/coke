@@ -1,11 +1,16 @@
-import React from "react";
+import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import Moment from "react-moment";
 import { nFormatter } from "../../utils";
 import "./HorizontalVideoCard.css";
+import { CardDropdown } from "../CardDropdown/CardDropdown";
+import { PlaylistsModal } from "../PlaylistsModal/PlaylistsModal";
 
 export const HorizontalVideoCard = ({ video }) => {
   const { _id, title, views, uploadedAt } = video;
+
+  const [isDropdownMenuOpen, setIsDropdownMenuOpen] = useState(false);
+  const [showPlaylistsModal, setShowPlaylistsModal] = useState(false);
 
   const navigate = useNavigate();
 
@@ -13,6 +18,7 @@ export const HorizontalVideoCard = ({ video }) => {
     <div
       className="horizontal-video-card"
       onClick={() => navigate(`/explore/${_id}`)}
+      onMouseLeave={() => setIsDropdownMenuOpen(false)}
     >
       <img
         className="horizontal-video-card-img"
@@ -22,9 +28,14 @@ export const HorizontalVideoCard = ({ video }) => {
       <div className="horizontal-video-card-info">
         <div className="horizontal-video-card-primary">
           <p className="horizontal-video-card-title">{title}</p>
-          <span className="material-icons horizontal-video-card-more">
-            more_vert
-          </span>
+          <div className="horizontal-video-card-more">
+            <CardDropdown
+              video={video}
+              isDropdownMenuOpen={isDropdownMenuOpen}
+              setIsDropdownMenuOpen={setIsDropdownMenuOpen}
+              showPlaylistModal={() => setShowPlaylistsModal(true)}
+            />
+          </div>
         </div>
         <div className="horizontal-video-card-secondary">
           <span className="vertical-video-card-views">
@@ -36,6 +47,12 @@ export const HorizontalVideoCard = ({ video }) => {
           <Moment fromNow>{uploadedAt}</Moment>
         </div>
       </div>
+      {showPlaylistsModal && (
+        <PlaylistsModal
+          video={video}
+          closePlaylistModal={() => setShowPlaylistsModal(false)}
+        />
+      )}
     </div>
   );
 };
