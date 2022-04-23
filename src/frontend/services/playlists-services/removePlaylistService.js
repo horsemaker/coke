@@ -2,7 +2,7 @@ import axios from "axios";
 
 export const removePlaylistService = async (token, playlistId) => {
   try {
-    const { data } = await axios.delete(`/api/user/playlists/$${playlistId}`, {
+    const { data } = await axios.delete(`/api/user/playlists/${playlistId}`, {
       headers: {
         authorization: token,
       },

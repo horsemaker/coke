@@ -1,18 +1,17 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
+import { usePlaylists } from "../../contexts";
 import "./ShrinkedSidebar.css";
 
 export const ShrinkedSidebar = () => {
+  const { playlists } = usePlaylists();
+
+  const sidebarLinkClass = ({ isActive }) =>
+    isActive ? "shrinked-sidebar-link active-link" : "shrinked-sidebar-link";
+
   return (
     <div className="shrinked-sidebar">
-      <NavLink
-        to="/"
-        className={({ isActive }) =>
-          isActive
-            ? "shrinked-sidebar-link active-link"
-            : "shrinked-sidebar-link"
-        }
-      >
+      <NavLink to="/" className={sidebarLinkClass}>
         <span title="Home" className="material-icons-outlined sidebar-icon">
           home
         </span>
@@ -29,38 +28,17 @@ export const ShrinkedSidebar = () => {
           search
         </span>
       </NavLink>
-      <NavLink
-        to="/explore"
-        className={({ isActive }) =>
-          isActive
-            ? "shrinked-sidebar-link active-link"
-            : "shrinked-sidebar-link"
-        }
-      >
+      <NavLink to="/explore" className={sidebarLinkClass}>
         <span title="Explore" className="material-icons-outlined sidebar-icon">
           explore
         </span>
       </NavLink>
-      <NavLink
-        to="/history"
-        className={({ isActive }) =>
-          isActive
-            ? "shrinked-sidebar-link active-link"
-            : "shrinked-sidebar-link"
-        }
-      >
+      <NavLink to="/history" className={sidebarLinkClass}>
         <span title="History" className="material-icons-outlined sidebar-icon">
           history
         </span>
       </NavLink>
-      <NavLink
-        to="/watchlater"
-        className={({ isActive }) =>
-          isActive
-            ? "shrinked-sidebar-link active-link"
-            : "shrinked-sidebar-link"
-        }
-      >
+      <NavLink to="/watchlater" className={sidebarLinkClass}>
         <span
           title="Watch Later"
           className="material-icons-outlined sidebar-icon"
@@ -68,14 +46,7 @@ export const ShrinkedSidebar = () => {
           watch_later
         </span>
       </NavLink>
-      <NavLink
-        to="/likes"
-        className={({ isActive }) =>
-          isActive
-            ? "shrinked-sidebar-link active-link"
-            : "shrinked-sidebar-link"
-        }
-      >
+      <NavLink to="/likes" className={sidebarLinkClass}>
         <span
           title="Liked Videos"
           className="material-icons-outlined sidebar-icon"
@@ -83,21 +54,18 @@ export const ShrinkedSidebar = () => {
           thumb_up
         </span>
       </NavLink>
-      <NavLink
-        to="/playlists"
-        className={({ isActive }) =>
-          isActive
-            ? "shrinked-sidebar-link active-link"
-            : "shrinked-sidebar-link"
-        }
-      >
-        <span
-          title="Playlists"
-          className="material-icons-outlined sidebar-icon"
+      {playlists.map((playlist) => (
+        <NavLink
+          key={playlist._id}
+          to={`/playlists/${playlist._id}`}
+          className={sidebarLinkClass}
         >
-          playlist_play
-        </span>
-      </NavLink>
+          <span title={playlist.title} className="material-icons sidebar-icon">
+            playlist_play
+          </span>
+        </NavLink>
+      ))}
+
       <span className="material-icons-outlined shrinked-sidebar-link sidebar-icon">
         settings
       </span>

@@ -25,11 +25,13 @@ export const HistoryPage = () => {
         <div className="user-property-page-cover-media">
           <img
             className="user-property-page-cover-img"
-            src={`https://img.youtube.com/vi/${history[0]._id}/maxresdefault.jpg`}
+            src={`https://img.youtube.com/vi/${
+              history[history.length - 1]._id
+            }/maxresdefault.jpg`}
             alt="Watch Later Videos"
           />
           <div className="user-property-page-cover-title">
-            <span class="material-icons">history</span>
+            <span className="material-icons">history</span>
             <span>History</span>
           </div>
         </div>

@@ -15,11 +15,11 @@ export const LikesPage = () => {
         <div className="user-property-page-cover-media">
           <img
             className="user-property-page-cover-img"
-            src={`https://img.youtube.com/vi/${likes[0]._id}/maxresdefault.jpg`}
+            src={`https://img.youtube.com/vi/${likes[likes.length - 1]._id}/maxresdefault.jpg`}
             alt="Liked Videos"
           />
           <div className="user-property-page-cover-title">
-            <span class="material-icons">thumb_up</span>
+            <span className="material-icons">thumb_up</span>
             <span>Liked Videos</span>
           </div>
         </div>

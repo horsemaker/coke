@@ -1,0 +1,66 @@
+.playlists-modal {
+  position: fixed;
+  background-color: var(--color-background-transparent-two);
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 3;
+  cursor: default;
+}
+
+.playlists-modal-container {
+  background-color: var(--color-background-accent-one);
+  border-radius: 5px;
+  padding: 1rem 1.25rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  box-shadow: var(--box-shadow);
+  max-width: calc(100vw - 2rem);
+}
+
+.playlists-modal-conatiner-primary {
+  display: flex;
+  align-items: center;
+  gap: 2.5rem;
+}
+
+.playlists-modal-conatiner-title {
+  font-weight: 500;
+  font-size: 1.25rem;
+}
+
+.playlists-modal-conatiner-close {
+  margin-left: auto;
+  padding: 0.25rem 0.5rem;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  aspect-ratio: 1 / 1;
+}
+
+.playlists-modal-conatiner-close:hover {
+  background-color: var(--color-background-accent-two);
+}
+
+.playlists-modal-conatiner-options {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.25rem;
+}
+
+.playlists-modal-conatiner-option-label {
+  cursor: pointer;
+}
+
+.playlists-modal-conatiner-actions {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}

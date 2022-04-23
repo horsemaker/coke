@@ -24,20 +24,10 @@
 
 .horizontal-video-card-more {
   visibility: hidden;
-  padding: 0.25rem 0.5rem;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  aspect-ratio: 1 / 1;
 }
 
 .horizontal-video-card:hover .horizontal-video-card-more {
   visibility: visible;
-}
-
-.horizontal-video-card-more:hover {
-  background-color: var(--color-background-accent-one);
 }
 
 .horizontal-video-card-info {

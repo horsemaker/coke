@@ -10,7 +10,7 @@ import {
   useVideos,
   useWatchLater,
 } from "../../contexts";
-import { HorizontalVideoCard } from "../../components";
+import { HorizontalVideoCard, PlaylistsModal } from "../../components";
 import {
   addHistoryService,
   addLikeService,
@@ -25,6 +25,7 @@ import "./VideoPage.css";
 export const VideoPage = () => {
   const videoPageRef = useRef();
   const [videoPageWidth, setVideoPageWidth] = useState();
+  const [showPlaylistsModal, setShowPlaylistsModal] = useState(false);
 
   const { videoId } = useParams();
   const navigate = useNavigate();
@@ -113,6 +114,10 @@ export const VideoPage = () => {
     if (addHistoryResponse !== undefined) {
       dispatchHistory({ type: SET_HISTORY, payload: addHistoryResponse });
     }
+  };
+
+  const addPlaylistHandler = () => {
+    setShowPlaylistsModal(true);
   };
 
   return (
@@ -208,7 +213,14 @@ export const VideoPage = () => {
                   </span>
                 </button>
               )}
-              <button className="video-action-button">
+              <button
+                className="video-action-button"
+                onClick={() =>
+                  auth.status
+                    ? addPlaylistHandler()
+                    : navigate("/signin", { state: { from: location } })
+                }
+              >
                 <span
                   className="material-icons video-icon"
                   title="Add to a playlist"
@@ -230,6 +242,12 @@ export const VideoPage = () => {
           <HorizontalVideoCard key={video._id} video={video} />
         ))}
       </div>
+      {showPlaylistsModal && (
+        <PlaylistsModal
+          video={currentVideo}
+          closePlaylistModal={() => setShowPlaylistsModal(false)}
+        />
+      )}
     </div>
   );
 };

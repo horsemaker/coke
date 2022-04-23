@@ -15,11 +15,11 @@
   font-size: 2rem;
 }
 
-.input {
+.input, .textarea {
   border-color: var(--color-background-accent-two);
 }
 
-.input:focus {
+.input:focus, .textarea:focus {
   border-color: var(--color-background-accent-three);
 }
 

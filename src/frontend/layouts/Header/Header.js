@@ -10,7 +10,8 @@ export const Header = () => {
   const { auth } = useAuth();
   const { setShowSidebar } = useSidebar();
 
-  const { pathname } = useLocation();
+  const location = useLocation();
+  const { pathname } = location;
   const navigate = useNavigate();
 
   const navMenuForbiddenPaths = ["/", "/signin", "/signup"];
@@ -46,12 +47,15 @@ export const Header = () => {
         </section>
         {!auth.status && (
           <section className="nav-authorization">
-            <button className="btn" onClick={() => navigate("/signin")}>
+            <button
+              className="btn"
+              onClick={() => navigate("/signin", { state: { from: location } })}
+            >
               Sign In
             </button>
             <button
               className="btn btn-primary"
-              onClick={() => navigate("/signup")}
+              onClick={() => navigate("/signup", { state: { from: location } })}
             >
               Sign Up
             </button>

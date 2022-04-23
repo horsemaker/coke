@@ -6,16 +6,21 @@ import {
   LOGO_DARK,
   LOGO_LIGHT,
 } from "../../constants";
-import { useAuth, useSidebar, useTheme } from "../../contexts";
+import { useAuth, usePlaylists, useSidebar, useTheme } from "../../contexts";
 import { useOnClickOutside, useWindowSize } from "../../hooks";
 import "./ExpandedSidebar.css";
 
 export const ExpandedSidebar = () => {
   const expandedSidebarRef = useRef();
 
+  const sidebarLinkClass = ({ isActive }) =>
+    isActive ? "expanded-sidebar-link active-link" : "expanded-sidebar-link";
+
   const { theme } = useTheme();
   const { auth, setAuth } = useAuth();
   const { setShowSidebar } = useSidebar();
+  const { playlists } = usePlaylists();
+
   const windowSize = useWindowSize();
 
   useOnClickOutside(expandedSidebarRef, () => {
@@ -62,15 +67,7 @@ export const ExpandedSidebar = () => {
           </NavLink>
         </section>
       </header>
-      <NavLink
-        to="/"
-        className={({ isActive }) =>
-          isActive
-            ? "expanded-sidebar-link active-link"
-            : "expanded-sidebar-link"
-        }
-        onClick={linkClickHandler}
-      >
+      <NavLink to="/" className={sidebarLinkClass} onClick={linkClickHandler}>
         <span className="material-icons-outlined sidebar-icon">home</span>
         <span className="sidebar-option">Home</span>
       </NavLink>
@@ -88,11 +85,7 @@ export const ExpandedSidebar = () => {
       </NavLink>
       <NavLink
         to="/explore"
-        className={({ isActive }) =>
-          isActive
-            ? "expanded-sidebar-link active-link"
-            : "expanded-sidebar-link"
-        }
+        className={sidebarLinkClass}
         onClick={linkClickHandler}
       >
         <span className="material-icons-outlined sidebar-icon">explore</span>
@@ -100,11 +93,7 @@ export const ExpandedSidebar = () => {
       </NavLink>
       <NavLink
         to="/history"
-        className={({ isActive }) =>
-          isActive
-            ? "expanded-sidebar-link active-link"
-            : "expanded-sidebar-link"
-        }
+        className={sidebarLinkClass}
         onClick={linkClickHandler}
       >
         <span className="material-icons-outlined sidebar-icon">history</span>
@@ -112,11 +101,7 @@ export const ExpandedSidebar = () => {
       </NavLink>
       <NavLink
         to="/watchlater"
-        className={({ isActive }) =>
-          isActive
-            ? "expanded-sidebar-link active-link"
-            : "expanded-sidebar-link"
-        }
+        className={sidebarLinkClass}
         onClick={linkClickHandler}
       >
         <span className="material-icons-outlined sidebar-icon">
@@ -126,30 +111,23 @@ export const ExpandedSidebar = () => {
       </NavLink>
       <NavLink
         to="/likes"
-        className={({ isActive }) =>
-          isActive
-            ? "expanded-sidebar-link active-link"
-            : "expanded-sidebar-link"
-        }
+        className={sidebarLinkClass}
         onClick={linkClickHandler}
       >
         <span className="material-icons-outlined sidebar-icon">thumb_up</span>
         <span className="sidebar-option">Liked Videos</span>
       </NavLink>
-      <NavLink
-        to="/playlists"
-        className={({ isActive }) =>
-          isActive
-            ? "expanded-sidebar-link active-link"
-            : "expanded-sidebar-link"
-        }
-        onClick={linkClickHandler}
-      >
-        <span className="material-icons-outlined sidebar-icon">
-          playlist_play
-        </span>
-        <span className="sidebar-option">Playlists</span>
-      </NavLink>
+      {playlists.map((playlist) => (
+        <NavLink
+          key={playlist._id}
+          to={`/playlists/${playlist._id}`}
+          className={sidebarLinkClass}
+          onClick={linkClickHandler}
+        >
+          <span className="material-icons sidebar-icon">playlist_play</span>
+          <span className="sidebar-option">{playlist.title}</span>
+        </NavLink>
+      ))}
       <div className="expanded-sidebar-link" onClick={linkClickHandler}>
         <span className="material-icons-outlined sidebar-icon">settings</span>
         <span className="sidebar-option">Settings</span>
