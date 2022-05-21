@@ -22,6 +22,13 @@ export const Banner = ({ banner }) => {
             >
               Explore Now!
             </button>
+          ) : bannerIndex % 2 === 0 ? (
+            <button
+              className="btn btn-primary"
+              onClick={() => navigate("/explore")}
+            >
+              Explore Now!
+            </button>
           ) : (
             <>
               <button
