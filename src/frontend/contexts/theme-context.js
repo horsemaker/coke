@@ -34,11 +34,9 @@ const ThemeProvider = ({ children }) => {
   useLayoutEffect(() => {
     localStorage.setItem(COKE_THEME, theme);
     if (theme === "light") {
-      document.documentElement.classList.remove("dark-theme");
-      document.documentElement.classList.add("light-theme");
+      document.documentElement.setAttribute("data-theme", "light");
     } else {
-      document.documentElement.classList.remove("light-theme");
-      document.documentElement.classList.add("dark-theme");
+      document.documentElement.setAttribute("data-theme", "dark");
     }
   }, [theme]);
 
