@@ -57,7 +57,7 @@ export const SignUpPage = () => {
               type="text"
               name="form-first-name"
               id="form-first-name"
-              placeholder="Adarsh"
+              placeholder="Yash"
               required
               value={firstName}
               onChange={(e) =>
@@ -88,7 +88,7 @@ export const SignUpPage = () => {
               type="email"
               name="form-email"
               id="form-email"
-              placeholder="adarshbalika@gmail.com"
+              placeholder="iamhorsemaker@gmail.com"
               required
               value={email}
               onChange={(e) => setUser({ ...user, email: e.target.value })}

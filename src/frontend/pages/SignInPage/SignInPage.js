@@ -58,7 +58,7 @@ export const SignInPage = () => {
               type="email"
               name="form-email"
               id="form-email"
-              placeholder="adarshbalika@gmail.com"
+              placeholder="iamhorsemaker@gmail.com"
               required
               value={user.email}
               onChange={(e) => setUser({ ...user, email: e.target.value })}
@@ -100,12 +100,12 @@ export const SignInPage = () => {
               onClick={(e) => {
                 e.preventDefault();
                 setUser({
-                  email: "adarshbalika@gmail.com",
-                  password: "adarshBalika123",
+                  email: "iamhorsemaker@gmail.com",
+                  password: "horsemaker123",
                 });
                 signInHandler({
-                  email: "adarshbalika@gmail.com",
-                  password: "adarshBalika123",
+                  email: "iamhorsemaker@gmail.com",
+                  password: "horsemaker123",
                 });
               }}
             >
