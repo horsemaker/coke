@@ -75,7 +75,7 @@ export const SignUpPage = () => {
               type="text"
               name="form-last-name"
               id="form-last-name"
-              placeholder="Balika"
+              placeholder="Ghodekar"
               required
               value={lastName}
               onChange={(e) => setUser({ ...user, lastName: e.target.value })}
