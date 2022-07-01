@@ -15,7 +15,6 @@ export const ImageCarousel = ({ images }) => {
       {images.map((image) => (
         <div key={image}>
           <img src={image} alt={image} />
-          <p></p>
         </div>
       ))}
     </Carousel>
