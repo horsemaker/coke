@@ -11,10 +11,11 @@ export const Header = () => {
   const { setShowSidebar } = useSidebar();
 
   const location = useLocation();
+  console.log("header location", location);
   const { pathname } = location;
   const navigate = useNavigate();
 
-  const navMenuForbiddenPaths = ["/", "/signin", "/signup"];
+  const navMenuForbiddenPaths = ["/signin", "/signup"];
 
   return (
     <header className="header">
@@ -49,13 +50,21 @@ export const Header = () => {
           <section className="nav-authorization">
             <button
               className="btn"
-              onClick={() => navigate("/signin", { state: { from: location } })}
+              onClick={() =>
+                navigate("/signin", {
+                  state: { from: location },
+                })
+              }
             >
               Sign In
             </button>
             <button
               className="btn btn-primary"
-              onClick={() => navigate("/signup", { state: { from: location } })}
+              onClick={() =>
+                navigate("/signup", {
+                  state: { from: location },
+                })
+              }
             >
               Sign Up
             </button>

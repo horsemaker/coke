@@ -22,7 +22,7 @@ export const PlaylistPage = () => {
       playlistId
     );
     if (removePlaylistResponse !== undefined) {
-      navigate("/explore", { replace: true });
+      navigate("/", { replace: true });
       dispatchPlaylists({
         type: SET_PLAYLISTS,
         payload: removePlaylistResponse,

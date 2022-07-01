@@ -8,7 +8,7 @@ import "./Sidebar.css";
 export const Sidebar = () => {
   const { pathname } = useLocation();
 
-  const sidebarForbiddenPaths = ["/", "/signin", "/signup"];
+  const sidebarForbiddenPaths = ["/signin", "/signup"];
   const { showSidebar } = useSidebar();
 
   const windowSize = useWindowSize();

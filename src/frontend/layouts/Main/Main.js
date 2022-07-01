@@ -4,7 +4,6 @@ import { RequireAuth } from "../../components";
 import {
   ExplorePage,
   HistoryPage,
-  HomePage,
   LikesPage,
   PlaylistPage,
   SignInPage,
@@ -18,10 +17,12 @@ export const Main = () => {
   return (
     <div className="main">
       <Routes>
-        <Route path="/" element={<HomePage />} />
+        {/* To be implemented in future */}
+        {/* <Route path="/" element={<HomePage />} /> */}
+        {/* <Route path="/explore" element={<ExplorePage />} /> */}
         <Route path="/signin" element={<SignInPage />} />
         <Route path="/signup" element={<SignUpPage />} />
-        <Route path="/explore" element={<ExplorePage />} />
+        <Route path="/" element={<ExplorePage />} />
         <Route path="/explore/:videoId" element={<VideoPage />} />
         <Route
           path="/likes"
