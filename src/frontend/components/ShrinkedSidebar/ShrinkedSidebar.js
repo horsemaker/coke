@@ -11,11 +11,12 @@ export const ShrinkedSidebar = () => {
 
   return (
     <div className="shrinked-sidebar">
-      <NavLink to="/" className={sidebarLinkClass}>
+      {/* To be implemented in future */}
+      {/* <NavLink to="/" className={sidebarLinkClass}>
         <span title="Home" className="material-icons-outlined sidebar-icon">
           home
         </span>
-      </NavLink>
+      </NavLink> */}
       <NavLink
         to="/search"
         className={({ isActive }) =>
@@ -28,7 +29,7 @@ export const ShrinkedSidebar = () => {
           search
         </span>
       </NavLink>
-      <NavLink to="/explore" className={sidebarLinkClass}>
+      <NavLink to="/" className={sidebarLinkClass}>
         <span title="Explore" className="material-icons-outlined sidebar-icon">
           explore
         </span>
@@ -65,10 +66,6 @@ export const ShrinkedSidebar = () => {
           </span>
         </NavLink>
       ))}
-
-      <span className="material-icons-outlined shrinked-sidebar-link sidebar-icon">
-        settings
-      </span>
     </div>
   );
 };
