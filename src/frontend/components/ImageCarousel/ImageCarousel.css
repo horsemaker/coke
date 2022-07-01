@@ -3,6 +3,7 @@
   border-width: 0;
   padding: 0;
   border-radius: 0;
+  max-height: calc(100vh - 10rem);
 }
 
 .carousel .thumbs-wrapper {
