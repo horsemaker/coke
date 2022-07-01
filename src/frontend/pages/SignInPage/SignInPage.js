@@ -15,7 +15,11 @@ export const SignInPage = () => {
   const { setAuth } = useAuth();
   const navigate = useNavigate();
   const location = useLocation();
-  let from = location.state?.from?.pathname || "/";
+  let from =
+    location.state?.from?.pathname &&
+    location.state?.from?.pathname !== "/signup"
+      ? location.state?.from?.pathname
+      : "/";
 
   const signInHandler = async (user) => {
     const userInformation = await signInService(user);
@@ -114,7 +118,7 @@ export const SignInPage = () => {
           </div>
           <span className="auth-link-message">
             New here?{" "}
-            <Link to="/signup" className="auth-link">
+            <Link to="/signup" className="auth-link" replace>
               Create an account!
             </Link>
           </span>
