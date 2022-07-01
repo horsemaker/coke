@@ -1,2 +1,4 @@
 - Changed default user in `users.js`
 - Refactored theme context to use `data-theme` attribute.
+- Fixed Auth Navigation
+- Removed Home Page
