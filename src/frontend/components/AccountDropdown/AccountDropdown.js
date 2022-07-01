@@ -43,7 +43,8 @@ export const AccountDropdown = () => {
       {isDropdownMenuOpen && (
         <div className="dropdown-menu">
           <ul className="list-simple list-cursor-pointer list-style-none">
-            <li>Profile</li>
+            {/* To be implemented in future */}
+            {/* <li>Profile</li> */}
             <li onClick={signOutHandler}>Sign Out</li>
           </ul>
         </div>
