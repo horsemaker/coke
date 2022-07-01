@@ -46,7 +46,7 @@ export const ExpandedSidebar = () => {
       token: null,
       user: null,
     });
-    navigate("/explore");
+    navigate("/");
   };
 
   return (
@@ -67,10 +67,11 @@ export const ExpandedSidebar = () => {
           </NavLink>
         </section>
       </header>
-      <NavLink to="/" className={sidebarLinkClass} onClick={linkClickHandler}>
+      {/* To be implemented in future */}
+      {/* <NavLink to="/" className={sidebarLinkClass} onClick={linkClickHandler}>
         <span className="material-icons-outlined sidebar-icon">home</span>
         <span className="sidebar-option">Home</span>
-      </NavLink>
+      </NavLink> */}
       <NavLink
         to="/search"
         className={({ isActive }) =>
@@ -83,11 +84,7 @@ export const ExpandedSidebar = () => {
         <span className="material-icons-outlined sidebar-icon">search</span>
         <span className="sidebar-option">Search</span>
       </NavLink>
-      <NavLink
-        to="/explore"
-        className={sidebarLinkClass}
-        onClick={linkClickHandler}
-      >
+      <NavLink to="/" className={sidebarLinkClass} onClick={linkClickHandler}>
         <span className="material-icons-outlined sidebar-icon">explore</span>
         <span className="sidebar-option">Explore</span>
       </NavLink>
@@ -128,10 +125,6 @@ export const ExpandedSidebar = () => {
           <span className="sidebar-option">{playlist.title}</span>
         </NavLink>
       ))}
-      <div className="expanded-sidebar-link" onClick={linkClickHandler}>
-        <span className="material-icons-outlined sidebar-icon">settings</span>
-        <span className="sidebar-option">Settings</span>
-      </div>
       {auth.status && (
         <div className="expanded-sidebar-account">
           <div>
