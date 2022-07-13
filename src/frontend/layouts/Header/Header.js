@@ -11,7 +11,6 @@ export const Header = () => {
   const { setShowSidebar } = useSidebar();
 
   const location = useLocation();
-  console.log("header location", location);
   const { pathname } = location;
   const navigate = useNavigate();
 

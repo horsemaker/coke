@@ -4,14 +4,25 @@
   "description": "(Diet) Coke Studio is a collection of only & all the music videos of the legendary Coke Studio. Encompassing all genres of music & featuring the best musical talents, Coke Studio continues to dig deep into finding hidden talent & celebrating it.",
   "icons": [
     {
-      "src": "favicon.ico",
-      "sizes": "64x64 32x32 24x24 16x16",
-      "type": "image/x-icon"
+      "src": "maskable_icon_x192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
     },
     {
       "src": "logo192.png",
       "type": "image/png",
       "sizes": "192x192"
+    },
+    {
+      "src": "logo256.png",
+      "type": "image/png",
+      "sizes": "256x256"
+    },
+    {
+      "src": "logo384.png",
+      "type": "image/png",
+      "sizes": "384x384"
     },
     {
       "src": "logo512.png",
@@ -21,6 +32,6 @@
   ],
   "start_url": ".",
   "display": "standalone",
-  "theme_color": "#ffffff",
-  "background_color": "#181818"
+  "theme_color": "#000000",
+  "background_color": "#ffffff"
 }
